@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Axis MF</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+</head>
+
+<body>
+    <div class="post-log-wrapper">
+
+        <!-- Sidebar Holder -->
+        <nav class="sidebar">
+            <div class="sidebar-wrapper">
+                <button type="button" class="btn-sitebar-close icon-cancel visible-xs-block visible-sm-block"></button>
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse" class="btn-sidebar icon-hamburgermenu"></button>
+                    <a class="sidebar-brand" href="#">
+                        <img src="images/logo-white.png" />
+                    </a>
+                </div>
+                <ul class="list-unstyled nav-main">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="icon-dashboard" data-toggle="tooltip" data-placement="right"
+                                title="Dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <i class="icon-portfolio" data-toggle="tooltip" data-placement="right"
+                                title="Portfolio"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#transactSubmenu" class="nav-subnav">
+                            <i class="icon-transact" data-toggle="tooltip" data-placement="right" title="Transact"></i>
+                            <span>Transact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="systematic_plans.html">
+                            <i class="icon-systematic_plans" data-toggle="tooltip" data-placement="right"
+                                title="Systematic Plans"></i>
+                            <span>Systematic Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my_transactions.html">
+                            <i class="icon-my_transactions" data-toggle="tooltip" data-placement="right"
+                                title="My Transactions"></i>
+                            <span>My Transactions</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#downloadStatementsSubmenu" class="nav-subnav">
+                            <i class="icon-download" data-toggle="tooltip" data-placement="right" title="Download Statements"></i>
+                            <span>Download Statements</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#investorSubmenu" class="nav-subnav">
+                            <i class="icon-download" data-toggle="tooltip" data-placement="right"
+                                title="Investor Services"></i>
+                            <span>Investor Services</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled nav-bottom">
+                    <li>
+                        <a href="home.html">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="expanded-menus">
+                <div class="subnav">
+                    <div class="btn-sitebar-back">
+                        <button type="button" class="btn icon-arrow_next"></button>
+                    </div>
+                    <div class="subnav-list-item" id="transactSubmenu">
+                        <h2>Transact</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="transact-invest.html">
+                                    <i class="icon-invest"></i>
+                                    <span>Invest</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-redeem.html">
+                                    <i class="icon-redeem"></i>
+                                    <span>Redeem</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-switch.html">
+                                    <i class="icon-switch"></i>
+                                    <span>Switch</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-add_funds.html">
+                                    <i class="icon-sip_topup"></i>
+                                    <span>Add Funds</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-insta_redeem.html">
+                                    <i class="icon-insta_redeem"></i>
+                                    <span>Insta Redeem</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subnav-list-item" id="downloadStatementsSubmenu">
+                        <h2>Download Statements</h2>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a href="download_statements-account_statement.html">
+                                    <i class="icon-account_statement"></i>
+                                    <span>Account
+                                        <br> Statement
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="download_statements-captial_gains.html">
+                                    <i class="icon-capital_gains"></i>
+                                    <span>Captial Gains</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="download_statements-stt_letter.html">
+                                    <i class="icon-stt_letter"></i>
+                                    <span>STT Letter</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subnav-list-item" id="investorSubmenu">
+                        <h2>Investor Services</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">
+                                    <i class="icon-download"></i>
+                                    <span>Download <br>
+                                        Statement</span>
+                                </a></li>
+                            <li><a href="otm_page.html">
+                                    <i class="icon-invest"></i>
+                                    <span>OTM</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div class="main-content">
+            <div class="sticky-item-top">
+                <div class="sticky-content">
+                    <div class="btn-active">Total Investments</div>
+                    <div id="totalInvestments" class="collapse ">
+                        <div class="scrollbar-theme">
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a href="javascript:void(0)">Total Investments</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Education Folio
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Travel Folio
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Retirement Folio
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Neha’s Folio 1
+                                        <i class="icon-link" data-toggle="tooltip" title="Family Folio"
+                                            data-placement="bottom"></i>
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">neha’s Folio 2
+                                        <i class="icon-link" data-toggle="tooltip" title="Family Folio"
+                                            data-placement="bottom"></i>
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">neha’s Folio 3
+                                        <i class="icon-link" data-toggle="tooltip" title="neha’s Folio 3"
+                                            data-placement="bottom"></i>
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="btn-collapsible collapsed icon-arrow_down" data-toggle="collapse"
+                        href="#totalInvestments"></a>
+                </div>
+            </div>
+            <!--/.sticky-item-top-->
+
+            <div class="sticky-item-bottom">
+                <div class="sticky-content">
+                    <div id="communicationBanner" class="collapse">
+                        <div class="insta_redemption_banner">
+                            <a href="javascript:void(0)" class="btn-close icon-cancel"></a>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="images/insta_redemption.png" class="img-responsive img-icon" /> </div>
+                                <div class="col-sm-8">
+                                    <h3>Insta Redemption</h3>
+                                    <p>Insta Redemption is now available. Redeem your Liquid fund and get money in few
+                                        minutes
+                                        in your bank account</p>
+                                    <a href="javascript:void(0)" class="btn btn-lg btn-filled">Redeem</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-collapsible collapsed icon-arrow_up" data-toggle="collapse"
+                        href="#communicationBanner"></a>
+                </div>
+            </div>
+            <!--/.sticky-item-bottom-->
+
+            <div class="floting-item-bottom">
+                <div id="floatingInteraction" class="collapse">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>New Investment</span>
+                                <i class="icon-rupees"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>Link Family Folio</span>
+                                <i class="icon-link"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>Statement</span>
+                                <i class="icon-download"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn-collapsible collapsed" data-toggle="collapse" href="#floatingInteraction"></a>
+            </div>
+            <!--/.floting-item-bottom-->
+
+            <nav class="navbar navbar-theme">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed btn-navbar icon-hamburgermenu"></button>
+                    <a class="navbar-brand visible-xs-block visible-sm-block" href="#">
+                        <img src="images/logo.png" />
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown user-dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle user-info hidden-xs hidden-sm"
+                                data-toggle="dropdown">
+                                <span class="username" title="ravindra.thakare@finoux.com">Good Afternoon
+                                    ravindra.thakare@finoux.com</span>
+                                <i class="icon-arrow_down"></i>
+                            </a>
+                            <span class="user-log-details hidden-xs hidden-sm">Last Login:
+                                <strong>3rd Oct 2017 03::30 PM</strong>
+                            </span>
+                            <a href="javascript:void(0)"
+                                class="dropdown-toggle visible-xs-inline-block visible-sm-inline-block"
+                                data-toggle="dropdown">
+                                <i class="icon-profile"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="visible-xs-block user-info">
+                                    <span class="username">Hello Neha!</span>
+                                    <br>
+                                    <span class="user-log-details text-center-xs">Last Login:
+                                        <strong>3rd Oct 2017 03::30 PM</strong>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="my_profile.html">
+                                        <i class="icon-my_profile"></i>
+                                        <span>My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="change_password.html">
+                                        <i class="icon-change_password"></i>
+                                        <span>Change Password</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact_us.html">
+                                        <i class="icon-contact_us"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sign_out.html">
+                                        <i class="icon-sign_out"></i>
+                                        <span>Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="add-cart hidden">
+                            <a href="javascript:void(0)">
+                                <i class="icon-cart">
+                                    <span class="badge online"></span>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--/.navbar-theme-->
+
+            <div class="coin-container">
+                <i class="icon-coin1"></i>
+                <i class="icon-coin2"></i>
+                <i class="icon-coin3"></i>
+                <i class="icon-coin4"></i>
+                <i class="icon-coin5"></i>
+                <i class="icon-coin6"></i>
+                <i class="icon-coin7"></i>
+                <i class="icon-coin8"></i>
+            </div>
+            <div class="container">
+                <div class="dashboard">
+                    <div class="page-scroll-theme" id="fullpage" style="">
+                        <div class="section">
+                            <div class="page-item absolute_return ">
+                                <div class="col-left">
+                                    <div class="col-content pull-left">
+                                        <span class="name">Total Invested Amount</span>
+                                        <span class="value val-cr-sm">
+                                            <span>Rs. </span>
+                                            <span class="counter">88,576.00</span>
+                                        </span>
+                                        <!--<span class="value val-lac"><span>Rs. </span><span class="counter">10,00,000.00</span> </span>
+                                    <span class="value val-cr"><span>Rs. </span><span class="counter">10,00,00,000.00</span> </span>-->
+
+
+                                        <span class="date invisible">As on 3rd oct, 2017</span>
+                                    </div>
+                                </div>
+                                <div class="col-center">
+                                    <div class="returns animated bounceIn positive">
+                                        <span class="spinner"></span>
+                                        <div class="maindiv_runninglines">
+                                            <div class="runningline1">
+                                                <div class="point"></div>
+                                            </div>
+                                            <div class="runningline2">
+                                                <div class="point"></div>
+                                            </div>
+                                            <div class="upperdiv1">
+                                                <div class="runningline3">
+                                                    <div class="point"></div>
+                                                </div>
+                                            </div>
+                                            <div class="upperdiv2">
+                                                <div class="runningline4">
+                                                    <div class="point"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name invisible">Absolute Return</div>
+                                        <div class="value invisible">
+                                            <i class="icon-arrow-graph"></i>
+                                            <span class="odometer amount">99.99 </span>
+                                            <sup>%</sup>
+                                        </div>
+                                        <div class="value-2 invisible">Rs. 2,750</div>
+                                    </div>
+                                </div>
+                                <div class="col-right">
+                                    <div class="col-content pull-right">
+                                        <span class="name">Total Current Amount</span>
+                                        <span class="value text-bold val-cr-sm">
+                                            <span>Rs. </span>
+                                            <span class="counter">90,375.45</span>
+                                        </span>
+                                        <span class="date">As on 3rd oct, 2017</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="go_to_next_arrow bounce" id="go_to_next">
+                                    <span>SCROLL</span>
+                                </a>
+                            </div>
+                            <!--/.absolute_return-->
+                        </div>
+                        <div class="section">
+                            <div class="page-item investments_chart">
+                                <div class="col-left">
+                                    <div class="w-100-sm">
+                                        <h3 class="invisible">
+                                            <span class="color-dot visible-xs-inline-block"
+                                                style="background-color:#ffe789;"></span> One Time Investments
+                                            <div class="hr-line" style="background-color:#ffe789;"></div>
+                                        </h3>
+                                        <div class="col-item invisible">
+                                            <span class="name">Invested Amount</span>
+                                            <span class="value">Rs. 2,50,000</span>
+                                        </div>
+                                        <div class="col-item invisible">
+                                            <span class="name">Current Amount</span>
+                                            <span class="value text-bold">Rs.30,000.00</span>
+                                            <span class="date">As on 3rd oct, 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-center chart-section" id="investments_chart">
+                                    <!---->
+                                    <!--<img src="images/investments_chart.png" class="img-responsive" />-->
+                                </div>
+                                <div class="col-right">
+                                    <div class="w-100-sm">
+                                        <h3 class="invisible">
+                                            <span class="color-dot visible-xs-inline-block"
+                                                style="background-color:#acf1f3;"></span> Systematic Investments
+                                            <div class="hr-line" style="background-color:#acf1f3;"></div>
+                                        </h3>
+                                        <div class="col-item invisible">
+                                            <span class="name">Invested Amount</span>
+                                            <span class="value">Rs. 20,676</span>
+                                        </div>
+                                        <div class="col-item invisible">
+                                            <span class="name">Current Amount</span>
+                                            <span class="value text-bold">Rs. 28,489.45</span>
+                                            <span class="date">As on 3rd oct, 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.investments_chart-->
+                        </div>
+                        <div class="section">
+                            <div class="page-item investments_chart onetime_investment">
+                                <h2>One Time Investments</h2>
+                                <div class="list-group-theme list-item-centered">
+                                    <div class="item">
+                                        <span class="name">Total Invested Amount </span>
+                                        <br>
+                                        <span class="value">Rs. 2,00,000</span>
+                                    </div>
+                                    <div class="item hidden-xs">
+                                        <span class="name">Absolute Return </span>
+                                        <br>
+                                        <div class="value text-bold">
+                                            <i class="icon-arrow-graph positive"></i>
+                                            <span>3.4</span>
+                                            <sup>%</sup>
+                                        </div>
+                                        <span class="value-2 text-bold">Rs. 2,750.56</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="name">Total Current Amount </span>
+                                        <br>
+                                        <span class="value text-bold">Rs. 3,35,643.45</span>
+                                        <br>
+                                        <span class="date">As on 3rd oct, 2017</span>
+                                    </div>
+                                    <div class="item visible-xs-block">
+                                        <span class="name">Absolute Return </span>
+                                        <br>
+                                        <div class="value text-bold">
+                                            <i class="icon-arrow-graph positive"></i>
+                                            <span>3.4</span>
+                                            <sup>%</sup>
+                                        </div>
+                                        <span class="value-2 text-bold">Rs. 2,750.56</span>
+                                    </div>
+                                </div>
+                                <div class="col-left"></div>
+                                <div class="col-center chart-section" id="onetime_investment_chart">
+                                    <img src="images/onetime_investments_chart.png" class="img-responsive" /> </div>
+                                <div class="col-right">
+                                    <h3>
+                                        <span class="color-dot visible-xs-inline-block"
+                                            style="background-color:#ffe789;"></span> Axis Dynamic Equity Fund Regular
+                                        Growth
+                                        <div class="hr-line"></div>
+                                    </h3>
+                                    <div class="col-item">
+                                        <span class="name">Invested Amount</span>
+                                        <span class="value">Rs. 20,489</span>
+                                    </div>
+                                    <div class="col-item">
+                                        <span class="name">Current Amount</span>
+                                        <span class="value text-bold">Rs. 28,489.36</span>
+                                        <span class="date">As on 3rd oct, 2017</span>
+                                    </div>
+                                    <div class="col-item">
+                                        <span class="name">Absolute Return</span>
+                                        <span class=" value  text-bold">
+                                            <i class="icon-arrow-graph positive"></i>
+                                            <span>4.0</span>
+                                            <sup>%</sup>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="start-sip">
+                                    <img src="images/img_lumpsum.png" class="img-icon" />
+                                    <span class="caption">We noticed you haven’t started an SIP, start one today!</span>
+                                    <a href="javascript:void(0)" class="btn btn-lg btn-filled pull-right">Start SIP</a>
+                                </div>
+                            </div>
+                            <!--/.investments_chart-->
+                        </div>
+                        <div class="section">
+                            <div class="page-item funds">
+                                <div class="navtab-theme">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#allFunds" data-toggle="tab">All Funds</a>
+                                        </li>
+                                        <li>
+                                            <a href="#equityFunds" data-toggle="tab">Equity Funds</a>
+                                        </li>
+                                        <li>
+                                            <a href="#debtFunds" data-toggle="tab">Debt Funds</a>
+                                        </li>
+                                        <li>
+                                            <a href="#liquidFunds" data-toggle="tab">Liquid Funds</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content ">
+                                        <div class="tab-pane active  allFunds" id="allFunds">
+                                            <div class="progress progress-theme">
+                                                <div class="progress-bar bg-equity" role="progressbar" style="width:50%"
+                                                    data-toggle="tooltip" title="50%" data-placement="bottom">
+                                                </div>
+                                                <div class="progress-bar bg-debt" role="progressbar" style="width:30%"
+                                                    data-toggle="tooltip" title="30%" data-placement="bottom">
+                                                </div>
+                                                <div class="progress-bar bg-liquid" role="progressbar" style="width:20%"
+                                                    data-toggle="tooltip" title="20%" data-placement="bottom">
+                                                </div>
+                                                <div class="progress-legend">
+                                                    <ul class="list-unstyled list-inline text-center">
+                                                        <li>
+                                                            <span class="color-dot bg-equity"></span>
+                                                            <span class="caption">Equity Funds</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="color-dot bg-debt"></span>
+                                                            <span class="caption">Debt Funds</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="color-dot bg-liquid"></span>
+                                                            <span class="caption">Liquid Funds</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--<div class="scrollbar-theme">-->
+                                            <div class="panel-group folding-cards" id="accordion">
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <div class="list-group-theme ">
+                                                            <div class="item vertical-center">
+                                                                <span class="color-dot bg-equity"></span>
+                                                                <span class="scrip-name">Axis Dynamic Equity Fund
+                                                                </span>
+                                                            </div>
+                                                            <div class="item">
+                                                                <span class="name">Current Amount </span>
+                                                                <br>
+                                                                <span class="value text-bold">Rs. 10,00,00,000.00</span>
+                                                                <small class="date">As on 3rd oct, 2017</small>
+                                                            </div>
+                                                            <div class="item text-center">
+                                                                <span class="name">Absolute Return </span>
+                                                                <br>
+                                                                <div class="value percent text-bold">
+                                                                    <i class="icon-arrow-graph positive"></i>
+                                                                    <span>-100.00</span>
+                                                                    <sup>%</sup>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item text-center hidden-xs">
+                                                                <a href="javascrpt:void(0)" class="btn btn-icon">
+                                                                    <i class="icon-invest"></i> Add Funds</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapse1" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <div class="list-group-theme">
+                                                                        <div class="item">
+                                                                            <div class="color-dot invisible hidden-xs">
+                                                                            </div>
+                                                                            <div class="visible-inline-block">
+                                                                                <span class="folio-name">Education Folio
+                                                                                </span>
+                                                                                <br>
+                                                                                <span
+                                                                                    class="folio-number">371371937139</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <span class="name">Current Amount </span>
+                                                                            <br>
+                                                                            <span class="value">
+                                                                                <strong>Rs. 10,000.45</strong>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="item hidden-xs"> </div>
+                                                                        <div class="item text-center text-right-xs">
+                                                                            <a href="javascrpt:void(0)"
+                                                                                class="btn btn-icon">
+                                                                                <i class="icon-invest"></i>
+                                                                                <br> Add Funds</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="list-group-theme">
+                                                                        <div class="item">
+                                                                            <div class="color-dot invisible hidden-xs">
+                                                                            </div>
+                                                                            <div class="visible-inline-block">
+                                                                                <span class="folio-name">Education Folio
+                                                                                </span>
+                                                                                <br>
+                                                                                <span
+                                                                                    class="folio-number">371371937139</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <span class="name">Current Amount </span>
+                                                                            <br>
+                                                                            <span class="value">
+                                                                                <strong>Rs. 10,000.45</strong>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="item hidden-xs"> </div>
+                                                                        <div class="item text-center text-right-xs">
+                                                                            <a href="javascrpt:void(0)"
+                                                                                class="btn btn-icon">
+                                                                                <i class="icon-invest"></i>
+                                                                                <br> Add Funds</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="list-group-theme">
+                                                                        <div class="item">
+                                                                            <div class="color-dot invisible hidden-xs">
+                                                                            </div>
+                                                                            <div class="visible-inline-block">
+                                                                                <span class="folio-name">Education Folio
+                                                                                </span>
+                                                                                <br>
+                                                                                <span
+                                                                                    class="folio-number">371371937139</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <span class="name">Current Amount </span>
+                                                                            <br>
+                                                                            <span class="value">
+                                                                                <strong>Rs. 10,000.45</strong>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="item hidden-xs"> </div>
+                                                                        <div class="item text-center text-right-xs">
+                                                                            <a href="javascrpt:void(0)"
+                                                                                class="btn btn-icon">
+                                                                                <i class="icon-invest"></i>
+                                                                                <br> Add Funds</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#collapse1" data-toggle="collapse" data-parent="#accordion"
+                                                        class="collapse-icon collapsed "></a>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <div class="list-group-theme ">
+                                                            <div class="item vertical-center">
+                                                                <span class="color-dot bg-equity"></span>
+                                                                <span class="scrip-name">Axis Dynamic Equity Fund
+                                                                </span>
+                                                            </div>
+                                                            <div class="item">
+                                                                <span class="name">Current Amount </span>
+                                                                <br>
+                                                                <span class="value text-bold">Rs. 10,00,00,000.00</span>
+                                                                <small class="date">As on 3rd oct, 2017</small>
+                                                            </div>
+                                                            <div class="item text-center">
+                                                                <span class="name">Absolute Return </span>
+                                                                <br>
+                                                                <div class="value percent text-bold">
+                                                                    <i class="icon-arrow-graph positive"></i>
+                                                                    <span>-100.00</span>
+                                                                    <sup>%</sup>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item text-center hidden-xs">
+                                                                <a href="javascrpt:void(0)" class="btn btn-icon">
+                                                                    <i class="icon-invest"></i> Add Funds</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapse1" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <div class="list-group-theme">
+                                                                        <div class="item">
+                                                                            <div class="color-dot invisible hidden-xs">
+                                                                            </div>
+                                                                            <div class="visible-inline-block">
+                                                                                <span class="folio-name">Education Folio
+                                                                                </span>
+                                                                                <br>
+                                                                                <span
+                                                                                    class="folio-number">371371937139</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <span class="name">Current Amount </span>
+                                                                            <br>
+                                                                            <span class="value">
+                                                                                <strong>Rs. 10,000.45</strong>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="item hidden-xs"> </div>
+                                                                        <div class="item text-center text-right-xs">
+                                                                            <a href="javascrpt:void(0)"
+                                                                                class="btn btn-icon">
+                                                                                <i class="icon-invest"></i>
+                                                                                <br> Add Funds</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="list-group-theme">
+                                                                        <div class="item">
+                                                                            <div class="color-dot invisible hidden-xs">
+                                                                            </div>
+                                                                            <div class="visible-inline-block">
+                                                                                <span class="folio-name">Education Folio
+                                                                                </span>
+                                                                                <br>
+                                                                                <span
+                                                                                    class="folio-number">371371937139</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <span class="name">Current Amount </span>
+                                                                            <br>
+                                                                            <span class="value">
+                                                                                <strong>Rs. 10,000.45</strong>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="item hidden-xs"> </div>
+                                                                        <div class="item text-center text-right-xs">
+                                                                            <a href="javascrpt:void(0)"
+                                                                                class="btn btn-icon">
+                                                                                <i class="icon-invest"></i>
+                                                                                <br> Add Funds</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="list-group-theme">
+                                                                        <div class="item">
+                                                                            <div class="color-dot invisible hidden-xs">
+                                                                            </div>
+                                                                            <div class="visible-inline-block">
+                                                                                <span class="folio-name">Education Folio
+                                                                                </span>
+                                                                                <br>
+                                                                                <span
+                                                                                    class="folio-number">371371937139</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <span class="name">Current Amount </span>
+                                                                            <br>
+                                                                            <span class="value">
+                                                                                <strong>Rs. 10,000.45</strong>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="item hidden-xs"> </div>
+                                                                        <div class="item text-center text-right-xs">
+                                                                            <a href="javascrpt:void(0)"
+                                                                                class="btn btn-icon">
+                                                                                <i class="icon-invest"></i>
+                                                                                <br> Add Funds</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#collapse1" data-toggle="collapse" data-parent="#accordion"
+                                                        class="collapse-icon collapsed "></a>
+                                                </div>
+                                            </div>
+                                            <!--</div>-->
+                                        </div>
+                                        <div class="tab-pane  equityFunds" id="equityFunds">
+                                            <div class="list-group-theme list-item-centered">
+                                                <div class="item">
+                                                    <span class="name">Total Invested Amount </span>
+                                                    <br>
+                                                    <span class="value">Rs. 20,676</span>
+                                                </div>
+                                                <div class="item">
+                                                    <span class="name">Total Current Amount </span>
+                                                    <br>
+                                                    <span class="value">
+                                                        <strong>Rs. 28,489.54</strong>
+                                                    </span>
+                                                </div>
+                                                <div class="item">
+                                                    <span class="name">Absolute Return </span>
+                                                    <br>
+                                                    <div class="value">
+                                                        <strong>
+                                                            <i class="icon-arrow-graph"></i>
+                                                            <span>3.4</span>
+                                                            <sup>%</sup>
+                                                        </strong>
+                                                    </div>
+                                                    <span class="value-2">
+                                                        <strong>Rs. 2,750.56</strong>
+                                                    </span>
+                                                </div>
+                                                <div class="item">
+                                                    <span class="name">Total Weightage </span>
+                                                    <br>
+                                                    <div class="progress progress-theme" style="min-width:140px;">
+                                                        <div class="progress-bar bg-equity" role="progressbar"
+                                                            style="width:75%"></div>
+                                                    </div>
+                                                    <span class="progress-val">75%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="debtFunds">
+                                            <h4 class="text-center">No Data Available</h4>
+                                        </div>
+                                        <div class="tab-pane" id="liquidFunds">
+                                            <h4 class="text-center">No Data Available</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.page-scroll-theme-->
+
+                    <div class="no-investment" style="display: none">
+                        <div class="post-page-header text-center">
+                            <h2 class="page-heading ">We notice you haven’t invested with us,
+                                <br> invest today!</h2>
+                        </div>
+                        <!--./post-page-header-->
+
+                        <div class="clearfix height-20 visible-lg-block"></div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card card-theme-2 text-center">
+                                    <div class="card-body">
+                                        <img src="images/img_sip.png" class="floting-img">
+                                        <div class="card-title">
+                                            <span>Start Systematic
+                                                <br> Investment
+                                            </span>
+                                        </div>
+                                        <div class="card-btns">
+                                            <a href="#" class="btn btn-lg btn-style btn-filled">Start SIP</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card card-theme-2 text-center">
+                                    <div class="card-body">
+                                        <img src="images/img_lumpsum.png" class="floting-img">
+                                        <div class="card-title">
+                                            <span>Start One Time
+                                                <br> Lumpsum Investment</span>
+                                        </div>
+                                        <div class="card-btns">
+                                            <a href="#" class="btn btn-lg btn-style btn-filled">Invest Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.no-investment-->
+                </div>
+                <!--/.dashboard-->
+            </div>
+            <!--/.container-->
+
+        </div>
+        <div class="overlay-light"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        /*========== resizable text ==========*/
+        /*function fnFitText(selector, parentSelector, MaxFontSize) {
+                    $(selector).each(function (i, box) {
+                        var width = $(selector).parents(parentSelector).width(), //$(box).width(),
+                        html = '<span style="white-space:nowrap"></span>',
+                        line = $(box).wrapInner(html).children()[0],
+                        n = parseFloat(MaxFontSize);
+                        $(box).css('font-size', n);
+                        while ($(line).width() > width) {
+                            $(box).css('font-size', --n);
+                        }
+                        $(box).text($(line).text());     
+                    });       
+                }*/
+        /*========== //Resizable text ==========*/
+
+
+        /*functions*/
+        function checkScreenSize() {
+            var newWindowWidth = $(window).width();
+            if (newWindowWidth > 990) {
+
+                //desktop
+                var flag1 = 0; //dhana-28
+                $('#fullpage').fullpage({
+                    navigation: true,
+                    navigationPosition: 'right',
+                    normalScrollElements: '.scrollbar-theme',
+
+                    afterLoad: function (anchorLink, index) {
+                        animationAbsoluteReturn();
+                    },
+                    onLeave: function (index, nextIndex, direction) { //dhana-28
+                        if (index == 1 && flag1 == '0') {
+                            animationInvestmentsChart();
+                            flag1 = 1;
+                        }
+                    }
+
+                });
+
+                // if ($('.sticky-content').hasClass('active')) {                
+                //     $.fn.fullpage.setMouseWheelScrolling(false);
+                //     $.fn.fullpage.setAllowScrolling(false);
+                // } else {
+                //     $.fn.fullpage.setMouseWheelScrolling(true);
+                //     $.fn.fullpage.setAllowScrolling(true);
+                // }
+
+                /*resizable text*/
+                /*setTimeout(function(){        
+                    fnFitText(".absolute_return .col-left .value, .absolute_return .col-right .value ", ".absolute_return .col-left, .absolute_return .col-right", 55);
+                    //fnFitText(".absolute_return .col-center .value", ".absolute_return .col-center", 55);
+                    fnFitText(".absolute_return .col-center .value-2", ".absolute_return .col-center", 20);
+                    fnFitText(".investments_chart .col-item .value", ".investments_chart .col-item", 36);
+                    fnFitText(".investments_chart.onetime_investment .col-item .value", ".investments_chart.onetime_investment .col-item", 24);
+                },1500);*/
+
+            } else {
+
+                //mobile
+
+                animationAbsoluteReturn();
+                animationInvestmentsChart();
+
+                /*resizable text*/
+                /*setTimeout(function(){        
+                    fnFitText(".absolute_return .col-left .value, .absolute_return .col-right .value ", ".absolute_return .col-left, .absolute_return .col-right", 30);
+                    //fnFitText(".absolute_return .col-center .value", ".absolute_return .col-center", 24);
+                    fnFitText(".absolute_return .col-center .value-2", ".absolute_return .col-center", 12);
+                    fnFitText(".investments_chart .col-item .value", ".investments_chart .col-item", 20);
+                    
+                },1500);*/
+            }
+        }
+
+        function dashbordCharts() {
+            var chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'investments_chart',
+                        type: 'pie',
+                        margin: [0, 0, 0, 0]
+                    },
+                    title: {
+                        text: ''
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        pie: {
+                            innerSize: '60%',
+                            dataLabels: {
+                                enabled: false
+                            },
+                        }
+                    },
+                    series: [{
+                        data: [{
+                            name: '',
+                            color: '#acf1f3',
+                            y: 70.00
+                        }, {
+                            name: '',
+                            color: '#ffe789',
+                            y: 30.00
+                        }]
+                    }]
+                },
+                function (chart) { // on complete
+
+                    var xpos = '50%';
+                    var ypos = '50%';
+                    var circleradius = 100;
+
+                    // Render the circle
+                    //chart.renderer.circle(xpos, ypos, circleradius).attr({
+                    //    fill: '#ddd',
+                    //}).add();
+
+                    // Render the text 
+                    chart.renderer.text('', xpos, ypos).css({
+                        width: circleradius * 2,
+                        color: 'red',
+                        textAlign: 'center'
+                    }).attr({
+                        zIndex: 999
+                    }).add();
+                });
+        }
+
+        function animationAbsoluteReturn() {
+            setTimeout(function () {
+                $('.dashboard .absolute_return .col-center .name, .dashboard .absolute_return .col-center .value-2')
+                    .removeClass('invisible').addClass('animated fadeInUp');
+                $('.dashboard .absolute_return .col-center .value').removeClass('invisible').addClass(
+                    'animated fadeIn');
+                //$('.dashboard .absolute_return .col-center .value i').addClass('animated bounceIn');
+                $('.odometer').html(88.88);
+                $('.counter').counterUp();
+                $(".coin-container").on('oanimationend animationend webkitAnimationEnd', function () {
+                    $(this).hide();
+                });
+
+            }, 500);
+            setTimeout(function () {
+                $(".coin-container").hide();
+            }, 2000);
+            setTimeout(function () {
+                if (114 < $('.absolute_return .amount.odometer-auto-theme').width()) {
+                    //$('.dashboard .absolute_return .col-center .value').css('font-size', '38px');
+                }
+            }, 600);
+            setTimeout(function () {
+                $('.spinner').fadeOut();
+            }, 1500);
+
+
+        }
+
+        function animationInvestmentsChart() {
+            setTimeout(function () {
+                $('.dashboard .page-scroll-theme .section .page-item .col-left h3, .dashboard .page-scroll-theme .section .page-item .col-right h3')
+                    .removeClass('invisible').addClass('animated fadeInUp');
+                $('.dashboard .page-scroll-theme .section .page-item .col-left .col-item, .dashboard .page-scroll-theme .section .page-item .col-right .col-item')
+                    .removeClass('invisible').addClass('animated fadeInDown');
+
+                dashbordCharts();
+
+            }, 500);
+        }
+
+        $(document).ready(function () {
+            /*functions call*/
+            checkScreenSize();
+            dashbordCharts();
+
+            //communicationBanner
+            /*setTimeout(function() {
+                $("#communicationBanner").parents('.sticky-content').addClass('active');
+                $("#communicationBanner").collapse('show');
+            }, 5000);
+            setTimeout(function() {
+                $("#communicationBanner").removeClass('in');
+                $("#communicationBanner").parents('.sticky-content').removeClass('active');  
+                $("#communicationBanner").parents('.sticky-content').find('.icon-arrow_up').addClass('collapsed'); //dhanashree 22nd march 2018
+            }, 10000);*/
+
+            //folding-cards
+            $('.folding-cards .panel .collapse-icon').click(function () {
+                //$('.folding-cards .panel').removeClass('active');
+                $(this).parents('.panel').toggleClass('active');
+            });
+            $(document).click(function (e) {
+                if (!$(e.target).is('.folding-cards, .folding-cards *')) {
+                    $('.folding-cards .panel').removeClass('active');
+                    $('.folding-cards .panel .panel-collapse.collapse').collapse('hide');
+                }
+            });
+
+            $('#go_to_next').on('click', function () { //DHANA
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+
+
+
+
+
+        $(window).on("resize", function (e) {
+            checkScreenSize();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                    time: 1000
+                }
+
+            );
+
+            function putcomma(a, b) {
+                try {
+                    if (a == "") return a;
+                    a = new Number(a);
+                    var c = new Number(b);
+                    var a = a.toFixed(c);
+                    var a = a.toString();
+                    var d = a.split('.');
+                    var a = d[0];
+                    var f = a < 0 ? true : false;
+                    if (f) a = a.substr(1);
+                    var g = new String();
+                    g = '';
+                    if (a.length > 3) {
+                        a = a.reverse();
+                        var i = 4;
+                        g = a.substring(0, 3);
+                        a = a.substring(3);
+                        for (i = 0; i < a.length; i++) {
+                            if (i % 2 == 0) g = g + ",";
+                            g = g + a.charAt(i);
+                        }
+                        //g = g.trim(',');
+                        g = g.reverse();
+                    } else {
+                        g = a;
+                    }
+                    if (f) g = "-" + g;
+                    if (d.length > 1) {
+                        g = g + '.' + d[1];
+                    }
+                    return g;
+                } catch (e) {}
+            }
+
+            function CommaRound2(a) {
+
+                var b = Math.round(a * 100) / 100;
+                b = putcomma(b, 2);
+                if (b == "0") b = "0.00";
+                return b;
+            }
+        });
+    </script>
+</body>
+
+</html>
