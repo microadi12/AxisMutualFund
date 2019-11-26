@@ -18968,6 +18968,8 @@ button.swiper-pagination-bullet {
 
 .icon-cart:before {
   content: "\e919";
+  padding-left: 5px; 
+  /* add property */
 }
 
 .icon-rupees:before {
