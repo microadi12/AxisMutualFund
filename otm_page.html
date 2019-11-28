@@ -11,6 +11,8 @@
     <link rel="icon" href="../../favicon.ico" />
     <title>Axis MF</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/emandate.css">
+
 </head>
 
 <body>
@@ -273,33 +275,49 @@
             </nav>
 
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>OTM</h1>
-                    </div>
-                    <div class="col-md-6">
-                        <div>
-                            <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal">
-                                <i class="icon-plus"></i>
-                                <span>Register New OTM</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div>
-                    <div class="row post-page-header fit-main-content">
+                    <div class="row post-page-header ">
                         <div class="col-sm-12">
                             <a href="" class="icon-backarrow btn-back"></a>
                         </div>
                     </div>
                 </div>
+                <div class="row" style="display : flex;margin-bottom: 25px">
+                    <div class="col-md-6" style="    justify-content: center;
+                    flex: 1;
+                    align-items: center;">
+                        <h1 style="margin: 0;align-self: center;color: #ed1965;
+                        font-weight: 600;">OTM</h1>
+                    </div>
+                    <div class="col-md-6" style="display: flex;
+                    align-content: center;
+                    justify-content: flex-end;
+                    flex: 1;">
+
+                        <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal"
+                            style="align-self:center; color:#ed1965;">
+
+                            <!-- <i class="icon-plus"
+                                style="width:50px;height:50px; border-radius:50%; border:2px solid #ed1965"></i> -->
+                            <i class="fa fa-plus-circle"></i>
+
+                            <span> Register New OTM</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div style="border-bottom: 1px solid rgba(237, 25, 101, 0.2);" class="fit-main-content"></div>
+
+
 
                 <div class="row" style="margin-top:2rem; margin-bottom:1rem">
                     <form>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <span class="icon-search-outline form-control-feedback"></span>
-                                <input type="search" class="form-control" placeholder="Search">
+                                <span class="icon-search-outline" style="position:absolute; top:8px; left:10px;"></span>
+                                <input type="search" class="form-control" placeholder="" style="border: 2px solid #e2e0e0;
+                                border-radius: 4px;">
+
                             </div>
                         </div>
                         <div class="col-md-4"></div>
@@ -323,7 +341,227 @@
                         </div>
 
                     </form>
+                    <div class="modal fade" id="registerOtmModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+                        style="z-index:1061; top:10%; position: absolute;">
+                        <div class="container">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="width: 725px;">
+                                <div class="modal-content" style="border-radius:10px">
+                                    <!-- <div class="modal-header">
+                                   
+                                </div> -->
+                                    <div class="modal-body" style="padding: 60px 55px">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                            style="opacity: 1;
+                                        font-size: 3rem;
+                                        position: absolute;
+                                        top: 20px;
+                                        right: 30px;
+                                        color: #ed1965;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h2 class="modal-title" id="exampleModalCenterTitle" style="color: #ed1965;
+                                        color: 24px;
+                                        /* font-size: 30px; */
+                                        letter-spacing: 2px;
+                                        word-spacing: 4px;
+                                        font-family: montserrat semibold; margin-bottom: 3.5rem;">
+                                            <p><strong>Register OTM</strong></p>
+                                        </h2>
+
+                                        <div class="steps-theme-4">
+                                            <ul class="list-unstyled clearfix" style="margin-bottom: 1.7rem;">
+                                                <li class="" style="width: 200px;">
+                                                    <a href="javascript:void(0)">
+                                                        <span class="prog_num">01</span>
+                                                        <i class="icon-tick"></i>
+                                                    </a>
+                                                    <div class="steps-title">Personal Details</div>
+                                                </li>
+                                                <li class="" style="width: 200px;">
+                                                    <a href="javascript:void(0)">
+                                                        <span class="prog_num">02</span>
+                                                        <i class="icon-tick"></i>
+                                                    </a>
+                                                    <div class="steps-title">Bank Details</div>
+                                                </li>
+
+                                                <!-- <li class="active">
+                                                        <a href="#">
+                                                                <span class="prog_num">03</span>
+                                                            <i class="icon-tick"></i>
+                                                        </a>
+                                                        <div class="steps-title">Child’s Future</div>
+                                                    </li>
+                                                    <li class="active">
+                                                        <a href="#">
+                                                                <span class="prog_num">03</span>
+                                                            <i class="icon-tick"></i>
+                                                        </a>
+                                                        <div class="steps-title">Child’s Future</div>
+                                                    </li> -->
+                                                <li class="" style="width: 200px;">
+                                                    <a href="javascript:void(0)">
+                                                        <span class="prog_num">03</span>
+                                                        <i class="icon-tick"></i>
+                                                    </a>
+                                                    <div class="steps-title">Investment Details</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="">
+                                            <form>
+                                                <div class="stepperFrame1">
+                                                    <!-- <h1>Frame 1</h1> -->
+                                                    <div class="form-group form-group-md">
+                                                        <label class="">Enter Name</label>
+                                                        <input type="text"
+                                                            class="form-control text-light inputTextDataName"
+                                                            id="txtName" value="" placeholder="Enter Name"
+                                                            style="font-size: 20px;
+                                                                height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                    </div>
+                                                    <div class="clearfix hidden-xs"></div>
+                                                    <div class="form-group form-group-md ">
+                                                        <label class="animated">Enter PAN</label>
+                                                        <input type="text"
+                                                            class="form-control text-light inputTextDataName"
+                                                            id="txtPan" value="" placeholder="Enter Pan"
+                                                            style="font-size: 20px;
+                                                                height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                    </div>
+                                                    <div class="clearfix hidden-xs"></div>
+                                                    <div class="form-group form-group-md ">
+                                                        <label class="animated">Enter Mobile Number</label>
+                                                        <input type="text"
+                                                            class="form-control text-light inputTextDataName"
+                                                            id="txtMobileNum" value="" placeholder="Enter Mobile"
+                                                            style="font-size: 20px;
+                                                                height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                    </div>
+                                                    <div class="clearfix hidden-xs"></div>
+                                                    <div class="form-group form-group-md ">
+                                                        <label class="">Enter Email ID</label>
+                                                        <input type="text"
+                                                            class="form-control text-light inputTextDataName"
+                                                            id="txtEmail" value="" placeholder="Enter Email"
+                                                            style="font-size: 20px;
+                                                                height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                    </div>
+                                                    <div class="clearfix hidden-xs"></div>
+                                                    <div class="form-group form-btns text-right">
+                                                        <input type="button" onclick="nextStep();" id="btnsignin"
+                                                            value="Next"
+                                                            class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
+
+                                                    </div>
+                                                </div>
+                                                <div class="stepperFrame2">
+                                                    <div class="intial">
+                                                        <div class="form-group form-group-md">
+                                                            <label class="">Enter IFCS Code</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtIfsc" value="" placeholder="Enter Name"
+                                                                style="font-size: 20px;
+                                                                            height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+                                                        <div class="form-group form-group-md ">
+                                                            <label class="animated">Enter Bank Name</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtPan" value="" placeholder="Enter Pan"
+                                                                style="font-size: 20px;
+                                                                            height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+                                                        <div class="form-group form-group-md ">
+                                                            <label class="animated">Enter Account Type</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtMobileNum" value="" placeholder="Enter Mobile"
+                                                                style="font-size: 20px;
+                                                                            height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+                                                        <div class="form-group form-group-md ">
+                                                            <label class="">Enter Account Number</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtEmail" value="" placeholder="Enter Email"
+                                                                style="font-size: 20px;
+                                                                            height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+
+                                                    </div>
+                                                    <div class="final">
+                                                        <h1>Frame 12</h1>
+                                                        <div class="form-group form-group-md">
+                                                            <label class="">Enter Name</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtName" value="" placeholder="Enter Name"
+                                                                style="font-size: 20px;
+                                                                    height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+                                                        <div class="form-group form-group-md ">
+                                                            <label class="animated">Enter PAN</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtPan" value="" placeholder="Enter Pan"
+                                                                style="font-size: 20px;
+                                                                    height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+                                                        <div class="form-group form-group-md ">
+                                                            <label class="animated">Enter Mobile Number</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtMobileNum" value="" placeholder="Enter Mobile"
+                                                                style="font-size: 20px;
+                                                                    height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+                                                        <div class="form-group form-group-md ">
+                                                            <label class="">Enter Email ID</label>
+                                                            <input type="text"
+                                                                class="form-control text-light inputTextDataName"
+                                                                id="txtEmail" value="" placeholder="Enter Email"
+                                                                style="font-size: 20px;
+                                                                    height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                        </div>
+                                                        <div class="clearfix hidden-xs"></div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        
+                                                            <input type="button" onclick="nextStep();" id="btnsignin"
+                                                                value="Previous"
+                                                                class="btn btn-lg btn-style btn-filled text-left text-semibold btn-signin">
+
+                                                            <input type="button" onclick="nextStep();" id="btnsignin"
+                                                                value="Next"
+                                                                class="btn btn-lg btn-style btn-filled pull-right text-semibold btn-signin">
+
+                                                        
+                                                    </div>
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
+
                 <div class="row">
                     <div class="col-md-12">
                         <!-- <table class="table">
@@ -444,114 +682,7 @@
             </div>
           </div> -->
 
-    <div class="modal fade" id="registerOtmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true" style="z-index:1061; top:10%">
-        <div class="container">
-            <div class="modal-dialog modal-dialog-centered" role="document" style="width: 725px;">
-                <div class="modal-content" style="border-radius:10px">
-                    <!-- <div class="modal-header">
-                       
-                    </div> -->
-                    <div class="modal-body" style="padding: 60px 55px">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1;
-                            font-size: 3rem;
-                            position: absolute;
-                            top: 20px;
-                            right: 30px;
-                            color: #ed1965;">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h2 class="modal-title" id="exampleModalCenterTitle" style="color: #ed1965;
-                            color: 24px;
-                            /* font-size: 30px; */
-                            letter-spacing: 2px;
-                            word-spacing: 4px;
-                            font-family: montserrat semibold; margin-bottom: 3.5rem;">
-                            <p><strong>Register OTM</strong></p>
-                        </h2>
 
-                        <div class="steps-theme-4">
-                            <ul class="list-unstyled clearfix" style="margin-bottom: 1.7rem;">
-                                <li class="" style="width: 200px;">
-                                    <a href="javascript:void(0)">
-                                        <span class="prog_num">01</span>
-                                        <i class="icon-tick"></i>
-                                    </a>
-                                    <div class="steps-title">Personal Details</div>
-                                </li>
-                                <li class="" style="width: 200px;">
-                                    <a href="javascript:void(0)">
-                                        <span class="prog_num">02</span>
-                                        <i class="icon-tick"></i>
-                                    </a>
-                                    <div class="steps-title">Bank Details</div>
-                                </li>
-
-                                <!-- <li class="active">
-                                            <a href="#">
-                                                    <span class="prog_num">03</span>
-                                                <i class="icon-tick"></i>
-                                            </a>
-                                            <div class="steps-title">Child’s Future</div>
-                                        </li>
-                                        <li class="active">
-                                            <a href="#">
-                                                    <span class="prog_num">03</span>
-                                                <i class="icon-tick"></i>
-                                            </a>
-                                            <div class="steps-title">Child’s Future</div>
-                                        </li> -->
-                                <li class="" style="width: 200px;">
-                                    <a href="javascript:void(0)">
-                                        <span class="prog_num">03</span>
-                                        <i class="icon-tick"></i>
-                                    </a>
-                                    <div class="steps-title">Investment Details</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="">
-                            <form>
-                                <div class="form-group form-group-md">
-                                    <label class="">Enter Name</label>
-                                    <input type="text" class="form-control text-light inputTextDataName" id="txtName"
-                                        value="" placeholder="Enter Name" style="font-size: 20px;
-                                        height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                </div>
-                                <div class="clearfix hidden-xs"></div>
-                                <div class="form-group form-group-md ">
-                                    <label class="animated">Enter PAN</label>
-                                    <input type="text" class="form-control text-light inputTextDataName" id="txtPan"
-                                        value="" placeholder="Enter Pan" style="font-size: 20px;
-                                        height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                </div>
-                                <div class="clearfix hidden-xs"></div>
-                                <div class="form-group form-group-md ">
-                                    <label class="animated">Enter Mobile Number</label>
-                                    <input type="text" class="form-control text-light inputTextDataName" id="txtMobileNum"
-                                        value="" placeholder="Enter Mobile" style="font-size: 20px;
-                                        height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                </div>
-                                <div class="clearfix hidden-xs"></div>
-                                <div class="form-group form-group-md ">
-                                    <label class="">Enter Email ID</label>
-                                    <input type="text" class="form-control text-light inputTextDataName" id="txtEmail"
-                                        value="" placeholder="Enter Email" style="font-size: 20px;
-                                        height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                </div>
-                                <div class="clearfix hidden-xs"></div>
-                                <div class="form-group form-btns text-right">
-                                        <input type="button" onclick="nextStep();" id="btnsignin" value="Next" class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
-                                        
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
 
 
@@ -566,8 +697,6 @@
         //     console.log("aditya singh")
         //     $('#registerOtmModal').modal('show');
         // }
-
-        
     </script>
 
 
