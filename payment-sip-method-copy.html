@@ -162,8 +162,9 @@
                 <div class="navbar-collapse" id="">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown user-dropdown">
-                            <a href="javascript:void(0)" class="dropdown-toggle user-info hidden-xs" data-toggle="dropdown">
-                                <span class="username">Hello Neha!</span>
+                            <a href="javascript:void(0)" class="dropdown-toggle user-info hidden-xs"
+                                data-toggle="dropdown">
+                                <span class="username">Good Morning Neha!</span>
                                 <i class="icon-arrow_down"></i>
                             </a>
                             <span class="user-log-details hidden-xs">Last Login:
@@ -171,12 +172,13 @@
                             </span>
 
 
-                            <a href="javascript:void(0)" class="dropdown-toggle visible-xs-inline-block" data-toggle="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle visible-xs-inline-block"
+                                data-toggle="dropdown">
                                 <i class="icon-profile"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="visible-xs-block user-info">
-                                    <span class="username">Hello Neha!</span>
+                                    <span class="username">Good Morning Neha!</span>
                                     <br>
                                     <span class="user-log-details text-center-xs">Last Login:
                                         <strong>3rd Oct 2017 03::30 PM</strong>
@@ -208,7 +210,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="add-cart hidden">
+                        <li class="">
                             <a href="javascript:void(0)">
                                 <i class="icon-cart">
                                     <span class="badge online"></span>
@@ -229,33 +231,270 @@
                     </div>
                     <!--./post-page-header-->
                     <!-- .payment-->
-                    <div class="row payment_status">
+                    <div class="row payment_status" style="margin-top: 40px;
+                    padding: 0px 30px 0px 20px;">
                         <div class="col-md-6 col-xs-6">
                             <div class="item">
-                                <span class="status_name">Payment</span>
+                                <span class="status_name" style="font-size: 21px;
+                                line-height: 70px;
+                                /* font-family: montserrat; */
+                                font-weight: 600;
+                                word-spacing: 1px;">SIP Registration Amount</span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-6">
+                        <div class="col-md-6 col-xs-6" style="text-align: right;">
                             <div class="item pull-right">
-                                <span class="name text-right">Installment Amount</span>
-                                <span class="value text-bold">Rs. 20,676</span>
+                                <span class="name text-right" style="    font-size: 13px;">Installment Amount</span>
+                                <span class="value text-bold" style="font-size:25px;">Rs. 500</span>
                             </div>
                         </div>
                     </div>
-                    <div class="navtab-theme">
-                        <ul class="nav nav-tabs">
+                    <div class="navtab-theme" style="margin-top: 35px;">
+                        <ul class="nav nav-tabs" style="justify-content: right;">
                             <li class="active">
-                                <a href="#OnlineProcess" data-toggle="tab">Online Process</a>
+                                <a href="#OtmProcess" data-toggle="tab"
+                                    style="font-size:18px; padding:12px 55px;">OTM</a>
+                            </li>
+                            <li class="">
+                                <a href="#UrnProcess" data-toggle="tab"
+                                    style="font-size:18px; padding:12px 55px;">URN</a>
                             </li>
                             <li>
-                                <a href="#OfflineProcess" data-toggle="tab">Offline Process</a>
+                                <a href="#OnlineProcess" data-toggle="tab"
+                                    style="font-size:18px; padding:12px 55px;">Online Process</a>
                             </li>
                         </ul>
                         <div class="tab-content ">
-                            <div class="tab-pane active" id="OnlineProcess">
+                            <div class="tab-pane" id="OtmProcess">
+                                <div class="row" style="margin-top: 35px">
+                                    <div class="col-md-6">
+                                        <h4>Register OTMs</h4>
+                                    </div>
+                                    <div class="col-md-6" style="margin-top: 10px">
+
+                                        <i></i>
+
+                                        <p style="
+                                                 text-align: right;
+                                                 color: #ed1965;
+                                                 font-family: inherit;
+                                                 /* color: black; */
+                                                 font-size: 16px;
+                                                 font-weight: 500">Register New OTM </p>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form>
+                                            <div class="col-md-5">
+                                                bank
+                                                <select>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card-scroll">
+                                        <div class="row row-md row-grid">
+                                            <div class="col-md-4 col-item">
+                                                <div class="card card-theme-3">
+                                                    <div class="card-body">
+                                                        <div class="card-title">
+                                                            <span class="heading">AXIS BANk</span>
+                                                            <span class="checkbox checkbox-green">
+                                                                <input id="indeterminateCheckbox" class="styled"
+                                                                    type="checkbox" onclick="changeState(this)">
+                                                                <label></label>
+                                                            </span>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div class="list-group-theme ">
+                                                            <div class="item item-full">
+                                                                <span class="name">Account Number</span>
+                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Expiry Date</span>
+                                                                <span class="value">14th Oct 2020</span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Maximum Amount</span>
+                                                                <span class="value">Rs. 2,00,000
+                                                                    <small>(Rupees Two Lakhs)</small>
+                                                                </span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Registered OTM No.</span>
+                                                                <span class="value">AB1237568</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-item">
+                                                <div class="card card-theme-3">
+                                                    <div class="card-body">
+                                                        <div class="card-title">
+                                                            <span class="heading">AXIS BANk</span>
+                                                            <span class="checkbox checkbox-green">
+                                                                <input id="indeterminateCheckbox" class="styled"
+                                                                    type="checkbox" onclick="changeState(this)">
+                                                                <label></label>
+                                                            </span>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div class="list-group-theme ">
+                                                            <div class="item item-full">
+                                                                <span class="name">Account Number</span>
+                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Expiry Date</span>
+                                                                <span class="value">14th Oct 2020</span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Maximum Amount</span>
+                                                                <span class="value">Rs. 2,00,000
+                                                                    <small>(Rupees Two Lakhs)</small>
+                                                                </span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Registered OTM No.</span>
+                                                                <span class="value">AB1237568</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-item">
+                                                <div class="card card-theme-3">
+                                                    <div class="card-body">
+                                                        <div class="card-title">
+                                                            <span class="heading">AXIS BANk</span>
+                                                            <span class="checkbox checkbox-green">
+                                                                <input id="indeterminateCheckbox" class="styled"
+                                                                    type="checkbox" onclick="changeState(this)">
+                                                                <label></label>
+                                                            </span>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div class="list-group-theme ">
+                                                            <div class="item item-full">
+                                                                <span class="name">Account Number</span>
+                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Expiry Date</span>
+                                                                <span class="value">14th Oct 2020</span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Maximum Amount</span>
+                                                                <span class="value">Rs. 2,00,000
+                                                                    <small>(Rupees Two Lakhs)</small>
+                                                                </span>
+                                                            </div>
+                                                            <div class="item item-full">
+                                                                <span class="name">Registered OTM No.</span>
+                                                                <span class="value">AB1237568</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card card-theme-3">
+                                            <p>Schedule your earlier SIP date as you are OTM registered.</p>
+                                            <div class="">
+                                                <div class="form-group">
+                                                    <div class="checkbox checkbox-green pull-left" style="top: 10px">
+                                                        <input type="checkbox" id="chk_ISlogin" checked=""
+                                                            name="checkbox">
+                                                        <label for="" class="form-label-xs"
+                                                            style="font-size: 12px;line-height: 20px; padding-left: 10px;">
+                                                            Earlier date was 12th Nov 2019, Would you like to start you
+                                                            are SIP on 5th of every month.
+
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="form-group">
+                                                    <div class="checkbox checkbox-green pull-left" style="top: 10px">
+                                                        <input type="checkbox" id="chk_ISlogin" checked=""
+                                                            name="checkbox">
+                                                        <label for="" class="form-label-xs"
+                                                            style="font-size: 12px;line-height: 20px; padding-left: 10px;">
+                                                            I have read and understood the
+
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="check-section">
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-green pull-left" style="top: 10px">
+                                            <input type="checkbox" id="chk_ISlogin" checked="" name="checkbox">
+                                            <label for="" class="form-label-xs"
+                                                style="font-size: 12px;line-height: 20px; padding-left: 10px;">
+                                                I have read and understood the
+                                                <a href="https://www.axismf.com/TermOfUse/terms" target="_blank">
+                                                    <span class="color-base">Terms &amp; Conditions.</span>
+                                                </a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="check-section">
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                I/We have read, understood & accepted of <a>Statement of Additional
+                                                    Document</a> of Axis Mutual Fund [AMF] and <a>Scheme Information
+                                                    Document</a>
+                                                of Schemes of AMF, <a>Terms and Condition of Electronic Transactions</a>
+                                                and <a>Privacy Policy</a> and Confirm the <a>Declarations</a>
+                                                given herewith.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>I am/we are not a US Person nor resident of Canada</p>
+                                        </li>
+                                        <li>
+                                            <p>I/We confirm that the subscription to units is made through my bank
+                                                account/ joint bank account where first account holder is one of the
+                                                joint holders of the bank account. Investor will receive redemption /
+                                                dividend proceeds directly into the bank account specified above.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                            <div class="tab-pane " id="OnlineProcess">
                                 <div class="online_process">
                                     <div class="purchase_process">
-                                        <h4 class="text-semibold"> Almost done! You are just one step away from registering your SIP. </h4>
+                                        <h4 class="text-semibold"> Almost done! You are just one step away from
+                                            registering your SIP. </h4>
                                         <div class="form-horizontal">
                                             <div class="form-group form-group-md">
                                                 <label>Bank</label>
@@ -267,8 +506,10 @@
                                             </div>
                                         </div>
                                         <div class="btn-section">
-                                            <a href="javascript:void(0)" class="btn btn-filled btn-style" id="genURN">Generate URN Number</a>
-                                            <a href="javascript:void(0)" class="btn btn-filled btn-style " id="regOTM">Pay with Registered OTM</a>
+                                            <a href="javascript:void(0)" class="btn btn-filled btn-style"
+                                                id="genURN">Generate URN Number</a>
+                                            <a href="javascript:void(0)" class="btn btn-filled btn-style "
+                                                id="regOTM">Pay with Registered OTM</a>
                                         </div>
                                     </div>
                                     <div class="registration_process" hidden="hidden" id="showURI">
@@ -282,44 +523,52 @@
                                                     <div class="step-list">
                                                         <img src="images/step-1.png" class="img-responsive img-icon">
                                                         <div class="caption">
-                                                            <span>Login to your registered bank’s net banking portal</span>
+                                                            <span>Login to your registered bank’s net banking
+                                                                portal</span>
                                                             <span class="bank-name">
                                                                 <strong>axisbank.com</strong>
                                                             </span>
                                                         </div>
-                                                        <img src="images/step-1-arrow.png" class="img-responsive img-step-1">
+                                                        <img src="images/step-1-arrow.png"
+                                                            class="img-responsive img-step-1">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="step-list">
                                                         <img src="images/step-2.png" class="img-responsive img-icon">
                                                         <div class="caption">
-                                                            <span>Go to the ‘Bill Pay’ or ‘Biller Registration’ section</span>
+                                                            <span>Go to the ‘Bill Pay’ or ‘Biller Registration’
+                                                                section</span>
                                                         </div>
-                                                        <img src="images/step-2-arrow.png" class="img-responsive img-step-2">
+                                                        <img src="images/step-2-arrow.png"
+                                                            class="img-responsive img-step-2">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="step-list">
                                                         <img src="images/step-3.png" class="img-responsive img-icon">
                                                         <div class="caption">
-                                                            <span>Select ‘Mutual Funds’ and add ‘Axis Mutual Fund’ as a biller</span>
+                                                            <span>Select ‘Mutual Funds’ and add ‘Axis Mutual Fund’ as a
+                                                                biller</span>
                                                         </div>
-                                                        <img src="images/step-3-arrow.png" class="img-responsive img-step-3">
+                                                        <img src="images/step-3-arrow.png"
+                                                            class="img-responsive img-step-3">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="step-list">
                                                         <img src="images/step-4.png" class="img-responsive img-icon">
                                                         <div class="caption">
-                                                            <span>Enter your URN Number and select ‘Auto Debit’ option </span>
+                                                            <span>Enter your URN Number and select ‘Auto Debit’ option
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </li>
                                             </ul>
                                             <div class="clearfix"></div>
                                         </div>
-                                        <div class="call-us"> It will take minimum 20 days for the SIP to register. In case of any query call us
+                                        <div class="call-us"> It will take minimum 20 days for the SIP to register. In
+                                            case of any query call us
                                             on
                                             <strong>+91 1234 56789</strong>
                                         </div>
@@ -332,7 +581,7 @@
                                                 </div>
                                             </div>
                                             <div class="clearfix height-20"></div>
-                                             <div class="">
+                                            <div class="">
                                                 <div class="card-scroll">
                                                     <div class="row row-md row-grid">
                                                         <div class="col-md-4 col-item">
@@ -341,7 +590,9 @@
                                                                     <div class="card-title">
                                                                         <span class="heading">AXIS BANk</span>
                                                                         <span class="checkbox checkbox-green">
-                                                                            <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                            <input id="indeterminateCheckbox"
+                                                                                class="styled" type="checkbox"
+                                                                                onclick="changeState(this)">
                                                                             <label></label>
                                                                         </span>
                                                                         <div class="clearfix"></div>
@@ -376,7 +627,9 @@
                                                                     <div class="card-title">
                                                                         <span class="heading">AXIS BANk</span>
                                                                         <span class="checkbox checkbox-green">
-                                                                            <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                            <input id="indeterminateCheckbox"
+                                                                                class="styled" type="checkbox"
+                                                                                onclick="changeState(this)">
                                                                             <label></label>
                                                                         </span>
                                                                         <div class="clearfix"></div>
@@ -411,7 +664,9 @@
                                                                     <div class="card-title">
                                                                         <span class="heading">AXIS BANk</span>
                                                                         <span class="checkbox checkbox-green">
-                                                                            <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                            <input id="indeterminateCheckbox"
+                                                                                class="styled" type="checkbox"
+                                                                                onclick="changeState(this)">
                                                                             <label></label>
                                                                         </span>
                                                                         <div class="clearfix"></div>
@@ -449,7 +704,8 @@
                                                             <ul class="pagination pagination-sm pagination-theme">
                                                                 <li class="disabled">
                                                                     <a href="javascript:void(0)" aria-label="Previous">
-                                                                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                                        <i class="fa fa-chevron-left"
+                                                                            aria-hidden="true"></i>
                                                                     </a>
                                                                 </li>
                                                                 <li class="active">
@@ -463,18 +719,20 @@
                                                                 </li>
                                                                 <li>
                                                                     <a href="javascript:void(0)" aria-label="Next">
-                                                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                                        <i class="fa fa-chevron-right"
+                                                                            aria-hidden="true"></i>
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                         </nav>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <a href="javascript:void(0)" class="btn btn-filled btn-style">Confirm</a>
+                                                        <a href="javascript:void(0)"
+                                                            class="btn btn-filled btn-style">Confirm</a>
                                                     </div>
                                                 </div>
-                                            </div> -->
-                                            <div class="registered-otms">                                                    
+                                            </div>
+                                            <div class="registered-otms">
                                                 <div class="slider_number">
                                                     <div class="">
                                                         <div class="card card-theme-3">
@@ -482,7 +740,8 @@
                                                                 <div class="card-title">
                                                                     <span class="heading">AXIS BANk</span>
                                                                     <span class="checkbox checkbox-green">
-                                                                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                        <input id="indeterminateCheckbox" class="styled"
+                                                                            type="checkbox" onclick="changeState(this)">
                                                                         <label></label>
                                                                     </span>
                                                                     <div class="clearfix"></div>
@@ -498,47 +757,15 @@
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Maximum Amount</span>
-                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
+                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees
+                                                                                Two Lakhs)</small></span>
                                                                         <!-- <span class="value-tex">Rupees two lakhs ninety-nine thousand nine hundred     eighty-nine</span> -->
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Registered OTM No.</span>
                                                                         <span class="value">AB1237568</span>
                                                                     </div>
-                                                                    
-                                                                </div>
-                                                            </div>
-                                                        </div>                                              
-                                                    </div>
-                                                    <div>
-                                                        <div class="card card-theme-3">
-                                                            <div class="card-body">
-                                                                <div class="card-title">
-                                                                    <span class="heading">AXIS BANk</span>
-                                                                    <span class="checkbox checkbox-green">
-                                                                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
-                                                                        <label></label>
-                                                                    </span>
-                                                                    <div class="clearfix"></div>
-                                                                </div>
-                                                                <div class="list-group-theme ">
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Account Number</span>
-                                                                        <span class="value">XXXX XXXX14 4082</span>
-                                                                    </div>
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Expiry Date</span>
-                                                                        <span class="value">14th Oct 2020</span>
-                                                                    </div>
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Maximum Amount</span>
-                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
-                                                                    </div>
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Registered OTM No.</span>
-                                                                        <span class="value">AB1237568</span>
-                                                                    </div>
-                                                                    
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -549,7 +776,8 @@
                                                                 <div class="card-title">
                                                                     <span class="heading">AXIS BANk</span>
                                                                     <span class="checkbox checkbox-green">
-                                                                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                        <input id="indeterminateCheckbox" class="styled"
+                                                                            type="checkbox" onclick="changeState(this)">
                                                                         <label></label>
                                                                     </span>
                                                                     <div class="clearfix"></div>
@@ -565,16 +793,17 @@
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Maximum Amount</span>
-                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
+                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees
+                                                                                Two Lakhs)</small></span>
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Registered OTM No.</span>
                                                                         <span class="value">AB1237568</span>
                                                                     </div>
-                                                                    
+
                                                                 </div>
                                                             </div>
-                                                        </div>                                              
+                                                        </div>
                                                     </div>
                                                     <div>
                                                         <div class="card card-theme-3">
@@ -582,7 +811,8 @@
                                                                 <div class="card-title">
                                                                     <span class="heading">AXIS BANk</span>
                                                                     <span class="checkbox checkbox-green">
-                                                                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                        <input id="indeterminateCheckbox" class="styled"
+                                                                            type="checkbox" onclick="changeState(this)">
                                                                         <label></label>
                                                                     </span>
                                                                     <div class="clearfix"></div>
@@ -598,16 +828,17 @@
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Maximum Amount</span>
-                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
+                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees
+                                                                                Two Lakhs)</small></span>
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Registered OTM No.</span>
                                                                         <span class="value">AB1237568</span>
                                                                     </div>
-                                                                    
+
                                                                 </div>
                                                             </div>
-                                                        </div>                                              
+                                                        </div>
                                                     </div>
                                                     <div>
                                                         <div class="card card-theme-3">
@@ -615,7 +846,8 @@
                                                                 <div class="card-title">
                                                                     <span class="heading">AXIS BANk</span>
                                                                     <span class="checkbox checkbox-green">
-                                                                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                        <input id="indeterminateCheckbox" class="styled"
+                                                                            type="checkbox" onclick="changeState(this)">
                                                                         <label></label>
                                                                     </span>
                                                                     <div class="clearfix"></div>
@@ -631,13 +863,49 @@
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Maximum Amount</span>
-                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
+                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees
+                                                                                Two Lakhs)</small></span>
                                                                     </div>
                                                                     <div class="item item-full">
                                                                         <span class="name">Registered OTM No.</span>
                                                                         <span class="value">AB1237568</span>
                                                                     </div>
-                                                                    
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="card card-theme-3">
+                                                            <div class="card-body">
+                                                                <div class="card-title">
+                                                                    <span class="heading">AXIS BANk</span>
+                                                                    <span class="checkbox checkbox-green">
+                                                                        <input id="indeterminateCheckbox" class="styled"
+                                                                            type="checkbox" onclick="changeState(this)">
+                                                                        <label></label>
+                                                                    </span>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="list-group-theme ">
+                                                                    <div class="item item-full">
+                                                                        <span class="name">Account Number</span>
+                                                                        <span class="value">XXXX XXXX14 4082</span>
+                                                                    </div>
+                                                                    <div class="item item-full">
+                                                                        <span class="name">Expiry Date</span>
+                                                                        <span class="value">14th Oct 2020</span>
+                                                                    </div>
+                                                                    <div class="item item-full">
+                                                                        <span class="name">Maximum Amount</span>
+                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees
+                                                                                Two Lakhs)</small></span>
+                                                                    </div>
+                                                                    <div class="item item-full">
+                                                                        <span class="name">Registered OTM No.</span>
+                                                                        <span class="value">AB1237568</span>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -679,7 +947,8 @@
                                                 <div class="row">
                                                     <div class="clearfix height-20 visible-xs-block"></div>
                                                     <div class="col-md-12">
-                                                        <a href="javascript:void(0)" class="btn btn-filled btn-style">Confirm</a>
+                                                        <a href="javascript:void(0)"
+                                                            class="btn btn-filled btn-style">Confirm</a>
                                                     </div>
                                                 </div>
                                                 <div class="clearfix"></div>
@@ -699,13 +968,15 @@
                                             <div class="col-sm-3">
                                                 <div class="form-group form-group-md form-animated">
                                                     <label class="animated slideInUp  hidden">IFSC Code</label>
-                                                    <input type="text" class="form-control" id="typeahead" value="" placeholder="IFSC Code">
+                                                    <input type="text" class="form-control" id="typeahead" value=""
+                                                        placeholder="IFSC Code">
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
                                                 <div class="form-group form-group-md  form-animated">
                                                     <label class="animated slideInUp  hidden">Bank</label>
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Bank">
+                                                    <input type="text" class="form-control" id="" value=""
+                                                        placeholder="Bank">
                                                 </div>
                                             </div>
                                         </div>
@@ -713,7 +984,8 @@
                                             <div class="col-sm-3">
                                                 <div class="form-group form-group-md form-animated">
                                                     <label class="animated slideInUp  hidden">Account Number</label>
-                                                    <input type="text" class="form-control" id="" value="" placeholder="Account Number">
+                                                    <input type="text" class="form-control" id="" value=""
+                                                        placeholder="Account Number">
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
@@ -732,12 +1004,15 @@
                                         <div class="form-group">
                                             <div class="checkbox checkbox-green">
                                                 <input type="checkbox" id="checkbox1" name="checkbox">
-                                                <label for="checkbox1" class="form-label-xs"> I have read, understood & accepted the terms and conditions of online transaction
+                                                <label for="checkbox1" class="form-label-xs"> I have read, understood &
+                                                    accepted the terms and conditions of online transaction
                                                     facility for Axis MF schemes and
                                                     <br>
-                                                    <span class='color-base'>Scheme Information Document, Statement of Additional Information,</span>
+                                                    <span class='color-base'>Scheme Information Document, Statement of
+                                                        Additional Information,</span>
                                                     of the scheme and the applicable
-                                                    <span class='color-base'>Terms & Conditions </span>before transacting. </label>
+                                                    <span class='color-base'>Terms & Conditions </span>before
+                                                    transacting. </label>
                                             </div>
                                         </div>
                                     </div>
@@ -757,7 +1032,9 @@
                                                     <div class="custom-btn">
                                                         <button class="btn btn-filled btn-style"> Proceed </button>
                                                     </div>
-                                                    <img src="images/step-1-arrow.png" class="img-responsive img-step-1"> </div>
+                                                    <img src="images/step-1-arrow.png"
+                                                        class="img-responsive img-step-1">
+                                                </div>
                                             </li>
                                             <li>
                                                 <div class="step-list">
@@ -766,7 +1043,9 @@
                                                         <span>Sign on
                                                             <br> the application form</span>
                                                     </div>
-                                                    <img src="images/step-2-arrow.png" class="img-responsive img-step-2"> </div>
+                                                    <img src="images/step-2-arrow.png"
+                                                        class="img-responsive img-step-2">
+                                                </div>
                                             </li>
                                             <li>
                                                 <div class="step-list">
@@ -777,7 +1056,6 @@
                                                             <br> acceptance point</span>
                                                     </div>
                                                     <div class="form-group">
-                                                        <!-- <label>Drawn on Bank</label> -->
                                                         <select class="form-control  selectpicker" data-width="100%">
                                                             <option>Location</option>
                                                             <option>Mumbai</option>
@@ -815,20 +1093,19 @@
     <script src="js/vendor.min.js"></script>
     <script src="js/common.js"></script>
     <script>
-      
         $(function () {
             $('#genURN').click(function () {
                 $('#showOTMS').hide();
                 $('#showURI').show();
                 $('html, body').animate({
-                    scrollTop: $("#genURN").offset().top-90
+                    scrollTop: $("#genURN").offset().top - 90
                 }, 800);
             });
             $('#regOTM').click(function () {
                 $('#showURI').hide();
                 $('#showOTMS').show();
                 $('html, body').animate({
-                    scrollTop: $("#regOTM").offset().top-90
+                    scrollTop: $("#regOTM").offset().top - 90
                 }, 800);
                 $('.slider_number').slick({
                     infinite: true,
@@ -844,33 +1121,32 @@
                     swipe: true,
                     draggable: false,
                     swipeToSlide: true,
-                    
-                    customPaging : function(slider_number, i) {
-                        var i = i + 1; 
+
+                    customPaging: function (slider_number, i) {
+                        var i = i + 1;
                         var thumb = $(slider_number.$slides[i]).data();
-                        return '<a>'+i+'</a>';
+                        return '<a>' + i + '</a>';
                     },
-                    responsive: [
-                        {
+                    responsive: [{
                             breakpoint: 767,
                             settings: {
                                 dots: false,
                                 arrows: false
                             }
-                        },    
+                        },
                         {
-                        breakpoint: 600,
+                            breakpoint: 600,
                             settings: {
                                 centerMode: true,
                                 centerPadding: '10px',
                                 slidesToShow: 2,
                                 slidesToScroll: 2,
                                 dots: false,
-                                arrows: false                        
+                                arrows: false
                             }
                         },
                         {
-                        breakpoint: 480,
+                            breakpoint: 480,
                             settings: {
                                 centerMode: true,
                                 centerPadding: '10px',
@@ -880,14 +1156,14 @@
                                 arrows: false
                             }
                         }
-                    ] 
+                    ]
                 });
                 // var l = $('.slick-dots li').length;
                 // var wid = $('.slick-dots li').width();
                 // var nav_pos = parseInt((l * wid));
                 // $('.slick-next').css('right', 917/2 - nav_pos);
                 // $('.slick-prev').css('left', 917/2 - nav_pos);
-             
+
             });
         });
     </script>
