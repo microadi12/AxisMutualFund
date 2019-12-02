@@ -266,34 +266,52 @@
                         </ul>
                         <div class="tab-content ">
                             <div class="tab-pane active" id="OtmProcess">
-                                <div class="row" style="margin-top: 35px">
+                                <div class="row" style="margin-top: 10px;">
                                     <div class="col-md-6">
-                                        <h4>Register OTMs</h4>
+                                        <h4 style="    font-size: 21px;
+                                        font-family: montserrat-regular;
+                                        font-weight: bold;
+                                    ">Registered OTMs</h4>
                                     </div>
-                                    <div class="col-md-6" style="margin-top: 10px">
+                                    <div class="col-md-6" style="    margin-top: 10px;
+                                    text-align: end;
+                                ">
 
-                                        <i></i>
+                                        <img src="images/addOtmIcon.png" style="   width: 25px;">
 
-                                        <p style="
-                                                 text-align: right;
-                                                 color: #ed1965;
-                                                 font-family: inherit;
-                                                 /* color: black; */
-                                                 font-size: 16px;
-                                                 font-weight: 500">Register New OTM </p>
+                                        <span style="
+                                               text-align: right;
+    color: #ed1965;
+    font-family: inherit;
+    /* color: black; */
+    /* font-size: 16px; */
+    font-weight: 500;
+    /* padding-top: 55px; */
+    /* margin-top: 11px; */
+    vertical-align: middle;">Register New OTM </span>
 
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row" style="margin: 10px 0px;">
                                     <div class="col-md-12">
                                         <form>
-                                            <div class="col-md-5">
-                                                bank
-                                                <select>
-                                                    <option value="volvo">Volvo</option>
-                                                    <option value="saab">Saab</option>
-                                                    <option value="opel">Opel</option>
-                                                    <option value="audi">Audi</option>
+                                            <div class="form-group col-md-4">
+                                                <label for="exampleFormControlSelect1"
+                                                    style="margin-top: 6px;">Bank</label>
+                                                <select class="form-control " id="exampleFormControlSelect1" style="position: absolute;
+                                                border-radius: 3px;
+                                                margin-left: 14px;
+                                                font-size: 14px;
+                                                font-family: montserrat-regular;
+                                                display: inline;
+                                                /* border-bottom: none; */
+                                                border: 1px solid #999999;
+                                                height: 27px;">
+                                                    <option>All</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
                                                 </select>
                                             </div>
                                         </form>
@@ -414,41 +432,48 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="card card-theme-3">
-                                            <p>Schedule your earlier SIP date as you are OTM registered.</p>
-                                            <div class="">
-                                                <div class="form-group">
-                                                    <div class="checkbox checkbox-green pull-left" style="top: 10px">
-                                                        <input type="checkbox" id="chk_ISlogin" checked=""
-                                                            name="checkbox">
-                                                        <label for="" class="form-label-xs"
-                                                            style="font-size: 12px;line-height: 20px; padding-left: 10px;">
-                                                            Earlier date was 12th Nov 2019, Would you like to start you
-                                                            are SIP on 5th of every month.
+                                    <div class="">
+                                        <div class="card card-theme-3" style="    padding: 25px;    background-color: #ee85ad1a;">
+                                            <p style="    margin: 0px;
+                                            color: #373737;
+                                            font-family: montserrat-regular;
+                                            font-weight: bold;
+                                            font-size: 16px;
+                                            letter-spacing: 1.2px;">Schedule your earlier SIP date as you are OTM registered.</p>
 
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <div class="form-group">
-                                                    <div class="checkbox checkbox-green pull-left" style="top: 10px">
-                                                        <input type="checkbox" id="chk_ISlogin" checked=""
-                                                            name="checkbox">
-                                                        <label for="" class="form-label-xs"
-                                                            style="font-size: 12px;line-height: 20px; padding-left: 10px;">
-                                                            I have read and understood the
+                                            <div class="checkbox" style="top: 10px">
+                                                <input type="checkbox" id="chk_ISCheck"  name="checkbox">
+                                                <label for="" class="form-label-xs"
+                                                    style="    font-size: 12px;
+                                                    line-height: 20px;
+                                                    padding-left: 15px;
+                                                    font-family: montserrat-regular;
+                                                    color: #707070;">
+                                                    Earlier date was 12th Nov 2019, Would you like to start you
+                                                    are SIP on 5th of every month.
 
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                </label>
                                             </div>
+                                            
+                                            <div class="checkbox" style="top: 10px;margin-top: 0px;">
+                                                <input type="checkbox" id="chk_ISCheck"  name="checkbox">
+                                                <label for="" class="form-label-xs"
+                                                    style="    font-size: 12px;
+                                                    line-height: 20px;
+                                                    padding-left: 15px;
+                                                    font-family: montserrat-regular;
+                                                    color: #707070;">
+                                                    You have not registered for OTM yet would you like to Register.
+
+                                                </label>
+                                            </div>
+                                          
+
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="check-section">
+                                <!-- <div class="check-section">
                                     <div class="form-group">
                                         <div class="checkbox checkbox-green pull-left" style="top: 10px">
                                             <input type="checkbox" id="chk_ISlogin" checked="" name="checkbox">
@@ -461,7 +486,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="check-section">
                                     <ul>
                                         <li>

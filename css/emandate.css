@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+
+ul li p::before {
+    content: "\2022";
+    color:  rgb(234, 33, 103) !important;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 29px;
+    position: relative;
+    top: 1.5px;
+}
+
+ul li {
+    color: #5a5a5ac9;
+}
+
+ul li p {
+    word-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat-regular';
+    text-align: justify;
+    line-height: 27px;
+    color: #6b6b6bc7;
+    font-stretch: normal;
+    margin-bottom: 11px;
+}
