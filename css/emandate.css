@@ -160,9 +160,114 @@ ul li p {
     letter-spacing: 1.2px;
     margin-bottom: 8px;
 }
+.card-theme-design label{
+    font-size: 12px;
+     line-height: 20px;
+    padding-left: 15px;
+    font-family: 'montserrat-regular';
+    color: #707070;
+}
+.term{
+font-size: 12px;
+line-height: 20px;
+padding-left: 15px;
+font-family: 'montserrat-regular';
+color: #707070;
+}
+.policy {
+    padding-left: 0px;
+    font-weight: 600;
+}
+.policy p{
+    color: #000000c4;
+}
+.payments-sip-modal{
+    z-index:1061; 
+    position: relative;
+    top: -450px;
+}
+.modal-w{
+    width: 500px;
+}
+.modal-body img{
+    display: block;
+    width: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px
+}
+.modal-body h3{
+    font-family: 'montserrat-semibold';
+    text-transform: uppercase;
+    word-spacing: 2px;
+    font-size: 22px;
+}
+.modal-body h5{
+    font-weight: 600;
+    font-size: 14px
+}
+.modal-body p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 36px;
+    color: #494949;
+    font-family: 'montserrat-regular';
+    font-weight: 600;
+    word-spacing: 1px;
+}
 
 
 
+/* otm_page css */
+
+.table-head{
+    padding:16px 15px !important; 
+    font-size:16px !important;
+}
+.table-td{
+    padding:40px 10px !important;
+}
+.table-data{
+    padding:40px 10px;
+    font-size: 18px;
+    color: #464646e8 !important;
+}
+.w-100{
+    width: 100%
+}
+.otm-row{
+    display : flex;
+    margin-bottom: 25px
+}
+.otm-title{
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+.otm-title h1{
+    margin: 0;
+    align-self: center;
+    color: #ed1965;
+    font-weight: 600;
+}
+.new-add{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+.new-add a{
+    align-self:center; 
+    color:#ed1965; 
+    cursor: pointer;
+}
+.m-tb{
+    margin-top:2rem; margin-bottom:1rem  
+}
+.radio-selection{
+    font-family: 'montserrat-semibold';
+    font-size: 18px;
+}
 
 /* media queries for Register Otm */
 

@@ -282,20 +282,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="display : flex;margin-bottom: 25px">
-                    <div class="col-md-6" style="    justify-content: center;
-                    flex: 1;
-                    align-items: center;">
-                        <h1 style="margin: 0;align-self: center;color: #ed1965;
-                        font-weight: 600;">OTM</h1>
+                <div class="row">
+                    <div class="col-md-6 otm-title">
+                        <h1>OTM</h1>
                     </div>
-                    <div class="col-md-6" style="display: flex;
-                    align-content: center;
-                    justify-content: flex-end;
-                    flex: 1;">
+                    <div class="col-md-6 new-add" style="">
 
-                        <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal"
-                            style="align-self:center; color:#ed1965; cursor: pointer;">
+                        <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal">
 
                             <!-- <i class="icon-plus"
                                 style="width:50px;height:50px; border-radius:50%; border:2px solid #ed1965"></i> -->
@@ -310,7 +303,7 @@
 
 
 
-                <div class="row" style="margin-top:2rem; margin-bottom:1rem">
+                <div class="row m-td">
                     <form>
                         <div class="col-md-4">
                             <div class="form-group">
@@ -325,18 +318,15 @@
                             <div class="radio radio-green radio-inline">
                                 <input type="radio" id="inlineRadio1" value="radioBtnSuccess" name="radioInline"
                                     checked>
-                                <label for="inlineRadio1" style="font-family: montserrat-semibold;
-                                        font-size: 18px;"> Success </label>
+                                <label for="inlineRadio1" class=""> Success </label>
                             </div>
                             <div class="radio radio-green radio-inline">
                                 <input type="radio" id="inlineRadio2" value="radioBtnFail" name="radioInline">
-                                <label for="inlineRadio1" style="font-family: montserrat-semibold;
-                                        font-size: 18px;"> Fail </label>
+                                <label for="inlineRadio1" class="radio-selection"> Fail </label>
                             </div>
                             <div class="radio radio-green radio-inline">
                                 <input type="radio" id="inlineRadio3" value="radioBtnInprocess" name="radioInline">
-                                <label for="inlineRadio1" style="font-family: montserrat-semibold;
-                                        font-size: 18px;"> Inprocess </label>
+                                <label for="inlineRadio1" class="radio-selection"> Inprocess </label>
                             </div>
                         </div>
 
@@ -562,54 +552,46 @@
 
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="table-theme table-border-base-theme table-plan">
-                            <table class="table " width="100%">
+                            <table class="table ">
                                 <thead>
                                     <tr>
-                                        <th class="text-center" style="padding:16px 15px; font-size:16px;">UMRN</th>
-                                        <th class="text-center" style="padding:16px 15px; font-size:16px;">FREQUENCY
+                                        <th class="text-center table-head">UMRN</th>
+                                        <th class="text-center table-head">FREQUENCY
                                         </th>
-                                        <th class="text-center" style="padding:16px 15px; font-size:16px;">EXPIRE DATE
+                                        <th class="text-center table-head">EXPIRE DATE
                                         </th>
-                                        <th class="text-center" style="padding:16px 15px; font-size:16px;">AMOUNT</th>
+                                        <th class="text-center table-haed">AMOUNT</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center" style="padding:40px 10px;"><span>#12345678</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"><span>Monthly</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"><span>27 OCT 2019</span></td>
-                                        <td class="text-center" style="padding:40px 10px;"> <span>&#8377;</span>
+                                        <td class="text-center table-td"><span>#12345678</span></td>
+                                        <td class="text-center table-data" ><span>Monthly</span></td>
+                                        <td class="text-center table-data"><span>27 OCT 2019</span></td>
+                                        <td class="text-center table-td"> <span>&#8377;</span>
                                             <span>2,93700</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center" style="padding:40px 10px;"><span>#12345678</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"><span>Quaterly</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"> <span>27 OCT 2019</span></td>
-                                        <td class="text-center" style="padding:40px 10px;">&#8377;<span>2,93700</span>
+                                        <td class="text-center table-td"><span>#12345678</span></td>
+                                        <td class="text-center table-data" ><span>Quaterly</span></td>
+                                        <td class="text-center table-data"> <span>27 OCT 2019</span></td>
+                                        <td class="text-center table-td">&#8377;<span>2,93700</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center" style="padding:40px 10px;"><span>#12345678</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"><span>Yearly</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"> <span>27 OCT 2019</span></td>
-                                        <td class="text-center" style="padding:40px 10px;">&#8377;<span>2,93700</span>
+                                        <td class="text-center table-td"><span>#12345678</span></td>
+                                        <td class="text-center table-data"><span>Yearly</span></td>
+                                        <td class="text-center table-data"> <span>27 OCT 2019</span></td>
+                                        <td class="text-center table-td">&#8377;<span>2,93700</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center" style="padding:40px 10px;"><span>#12345678</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"><span>Yearly</span></td>
-                                        <td class="text-center" style="padding:40px 10px;font-size: 18px;
-                                        color: #464646e8;"> <span>27 OCT 2019</span></td>
-                                        <td class="text-center" style="padding:40px 10px;">&#8377;<span>2,93700</span>
+                                        <td class="text-center table-td"><span>#12345678</span></td>
+                                        <td class="text-center table-data"><span>Yearly</span></td>
+                                        <td class="text-center table-data"> <span>27 OCT 2019</span></td>
+                                        <td class="text-center table-td">&#8377;<span>2,93700</span>
                                         </td>
                                     </tr>
                                 </tbody>
