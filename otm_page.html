@@ -12,7 +12,9 @@
     <title>Axis MF</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/emandate.css">
-
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -360,199 +362,174 @@
                                         color: #ed1965;">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h2 class="modal-title" id="exampleModalCenterTitle" style="color: #ed1965;
-                                        color: 24px;
-                                        /* font-size: 30px; */
-                                        letter-spacing: 2px;
-                                        word-spacing: 4px;
-                                        font-family: montserrat semibold; margin-bottom: 3.5rem;">
-                                            <p><strong>Register OTM</strong></p>
-                                        </h2>
-
-                                        <div class="steps-theme-4">
-                                            <ul class="list-unstyled clearfix" style="margin-bottom: 1.7rem;">
-                                                <li class="" style="width: 200px;">
-                                                    <a href="javascript:void(0)">
-                                                        <span class="prog_num">01</span>
-                                                        <i class="icon-tick"></i>
-                                                    </a>
-                                                    <div class="steps-title">Personal Details</div>
-                                                </li>
-                                                <li class="" style="width: 200px;">
-                                                    <a href="javascript:void(0)">
-                                                        <span class="prog_num">02</span>
-                                                        <i class="icon-tick"></i>
-                                                    </a>
-                                                    <div class="steps-title">Bank Details</div>
-                                                </li>
-
-                                                <!-- <li class="active">
-                                                        <a href="#">
-                                                                <span class="prog_num">03</span>
+                                        
+                                            <h2 class="otm-title">Register OTM</h2>
+                                            <div class="steps-center steps-theme-4">
+                                                <ul class="list-unstyled clearfix" style="margin-bottom: 1.7rem;">
+                                                    <li class="w-150 li1">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="prog_num">01</span>
                                                             <i class="icon-tick"></i>
                                                         </a>
-                                                        <div class="steps-title">Child’s Future</div>
+                                                        <div class="steps-title">Personal Details</div>
                                                     </li>
-                                                    <li class="active">
-                                                        <a href="#">
-                                                                <span class="prog_num">03</span>
+                                                    <li class="w-150 li2">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="prog_num">02</span>
                                                             <i class="icon-tick"></i>
                                                         </a>
-                                                        <div class="steps-title">Child’s Future</div>
-                                                    </li> -->
-                                                <li class="" style="width: 200px;">
-                                                    <a href="javascript:void(0)">
-                                                        <span class="prog_num">03</span>
-                                                        <i class="icon-tick"></i>
-                                                    </a>
-                                                    <div class="steps-title">Investment Details</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="">
-                                            <form>
-                                                <div class="stepperFrame1">
-                                                    <!-- <h1>Frame 1</h1> -->
-                                                    <div class="form-group form-group-md">
-                                                        <label class="">Enter Name</label>
-                                                        <input type="text"
-                                                            class="form-control text-light inputTextDataName"
-                                                            id="txtName" value="" placeholder="Enter Name"
-                                                            style="font-size: 20px;
-                                                                height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                    </div>
-                                                    <div class="clearfix hidden-xs"></div>
-                                                    <div class="form-group form-group-md ">
-                                                        <label class="animated">Enter PAN</label>
-                                                        <input type="text"
-                                                            class="form-control text-light inputTextDataName"
-                                                            id="txtPan" value="" placeholder="Enter Pan"
-                                                            style="font-size: 20px;
-                                                                height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                    </div>
-                                                    <div class="clearfix hidden-xs"></div>
-                                                    <div class="form-group form-group-md ">
-                                                        <label class="animated">Enter Mobile Number</label>
-                                                        <input type="text"
-                                                            class="form-control text-light inputTextDataName"
-                                                            id="txtMobileNum" value="" placeholder="Enter Mobile"
-                                                            style="font-size: 20px;
-                                                                height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                    </div>
-                                                    <div class="clearfix hidden-xs"></div>
-                                                    <div class="form-group form-group-md ">
-                                                        <label class="">Enter Email ID</label>
-                                                        <input type="text"
-                                                            class="form-control text-light inputTextDataName"
-                                                            id="txtEmail" value="" placeholder="Enter Email"
-                                                            style="font-size: 20px;
-                                                                height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                    </div>
-                                                    <div class="clearfix hidden-xs"></div>
-                                                    <div class="form-group form-btns text-right">
-                                                        <input type="button" onclick="nextStep();" id="btnsignin"
-                                                            value="Next"
-                                                            class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
-
-                                                    </div>
-                                                </div>
-                                                <div class="stepperFrame2">
-                                                    <div class="intial">
-                                                        <div class="form-group form-group-md">
-                                                            <label class="">Enter IFCS Code</label>
-                                                            <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtIfsc" value="" placeholder="Enter Name"
-                                                                style="font-size: 20px;
-                                                                            height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                        </div>
-                                                        <div class="clearfix hidden-xs"></div>
-                                                        <div class="form-group form-group-md ">
-                                                            <label class="animated">Enter Bank Name</label>
-                                                            <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtPan" value="" placeholder="Enter Pan"
-                                                                style="font-size: 20px;
-                                                                            height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                        </div>
-                                                        <div class="clearfix hidden-xs"></div>
-                                                        <div class="form-group form-group-md ">
-                                                            <label class="animated">Enter Account Type</label>
-                                                            <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtMobileNum" value="" placeholder="Enter Mobile"
-                                                                style="font-size: 20px;
-                                                                            height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                        </div>
-                                                        <div class="clearfix hidden-xs"></div>
-                                                        <div class="form-group form-group-md ">
-                                                            <label class="">Enter Account Number</label>
-                                                            <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtEmail" value="" placeholder="Enter Email"
-                                                                style="font-size: 20px;
-                                                                            height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
-                                                        </div>
-                                                        <div class="clearfix hidden-xs"></div>
-
-                                                    </div>
-                                                    <div class="final">
-                                                        <h1>Frame 12</h1>
+                                                        <div class="steps-title">Bank Details</div>
+                                                    </li>
+                                                    <li class="w-150 li3">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="prog_num">03</span>
+                                                            <i class="icon-tick"></i>
+                                                        </a>
+                                                        <div class="steps-title">Investment Details</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="">
+                                                <form>
+                                                    <div class="stepperFrame1" style="display: block;">
+                                                        <!-- <h1>Frame 1</h1> -->
                                                         <div class="form-group form-group-md">
                                                             <label class="">Enter Name</label>
                                                             <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtName" value="" placeholder="Enter Name"
-                                                                style="font-size: 20px;
-                                                                    height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                                class="form-control text-light  stepperField inputTextDataName"
+                                                                id="txtName" value="" placeholder="Enter Name">
                                                         </div>
                                                         <div class="clearfix hidden-xs"></div>
                                                         <div class="form-group form-group-md ">
                                                             <label class="animated">Enter PAN</label>
                                                             <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtPan" value="" placeholder="Enter Pan"
-                                                                style="font-size: 20px;
-                                                                    height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                                class="form-control text-light stepperField inputTextDataName"
+                                                                id="txtPan" value="" placeholder="Enter Pan">
                                                         </div>
                                                         <div class="clearfix hidden-xs"></div>
                                                         <div class="form-group form-group-md ">
                                                             <label class="animated">Enter Mobile Number</label>
                                                             <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtMobileNum" value="" placeholder="Enter Mobile"
-                                                                style="font-size: 20px;
-                                                                    height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                                class="form-control text-light stepperField inputTextDataName"
+                                                                id="txtMobileNum" value="" placeholder="Enter Mobile">
                                                         </div>
                                                         <div class="clearfix hidden-xs"></div>
                                                         <div class="form-group form-group-md ">
                                                             <label class="">Enter Email ID</label>
                                                             <input type="text"
-                                                                class="form-control text-light inputTextDataName"
-                                                                id="txtEmail" value="" placeholder="Enter Email"
-                                                                style="font-size: 20px;
-                                                                    height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                                class="form-control text-light stepperField inputTextDataName"
+                                                                id="txtEmail" value="" placeholder="Enter Email">
                                                         </div>
                                                         <div class="clearfix hidden-xs"></div>
-
+                                                        <div class="form-group form-btns text-right">
+                                                            <input type="button" onclick="increment(1);" id="btnsignin" value="Next"
+                                                                class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
+                
+                                                        </div>
                                                     </div>
-                                                    <div class="row">
-
-                                                        <input type="button" onclick="nextStep();" id="btnsignin"
-                                                            value="Previous"
-                                                            class="btn btn-lg btn-style btn-filled text-left text-semibold btn-signin">
-
-                                                        <input type="button" onclick="nextStep();" id="btnsignin"
-                                                            value="Next"
-                                                            class="btn btn-lg btn-style btn-filled pull-right text-semibold btn-signin">
-
-
+                                                    <div class="stepperFrame2" style="display: none;">
+                                                        <div class="intial">
+                                                            <div class="form-group form-group-md">
+                                                                <label class="">Enter IFCS Code</label>
+                                                                <input type="text"
+                                                                    class="form-control text-light stepperField inputTextDataName"
+                                                                    id="txtIfsc" value="" placeholder="Enter Name">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <div class="form-group form-group-md ">
+                                                                <label class="animated">Enter Bank Name</label>
+                                                                <input type="text"
+                                                                    class="form-control text-light stepperField inputTextDataName"
+                                                                    id="txtPan" value="" placeholder="Enter Pan">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <div class="form-group form-group-md ">
+                                                                <label class="animated">Enter Account Type</label>
+                                                                <input type="text"
+                                                                    class="form-control text-light stepperField inputTextDataName"
+                                                                    id="txtMobileNum" value="" placeholder="Enter Mobile">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <div class="form-group form-group-md ">
+                                                                <label class="">Enter Account Number</label>
+                                                                <input type="text"
+                                                                    class="form-control text-light stepperField inputTextDataName"
+                                                                    id="txtEmail" value="" placeholder="Enter Email">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <input type="button" onclick="decrement(1);" id="btnsignin" value="Previous"
+                                                                class="btn btn-lg btn-style btn-filled text-left text-semibold btn-signin">
+                
+                                                            <input type="button" onclick="increment(2);" id="btnsignin" value="Next"
+                                                                class="btn btn-lg btn-style btn-filled pull-right text-semibold btn-signin">
+                                                        </div>
+                
+                                                        <div class="row text-center">
+                
+                                                        </div>
+                                                        
                                                     </div>
-
-
-                                                </div>
-                                            </form>
-                                        </div>
+                                                    <div class="stepperFrame3" style="display: none;">
+                                                        <div class="final">
+                
+                                                            <div class="form-group form-group-md">
+                                                                <label class="">Enter Name</label>
+                                                                <input type="text" class="form-control text-light inputTextDataName"
+                                                                    id="txtName" value="" placeholder="Enter Name"
+                                                                    style="font-size: 20px;
+                                                                        height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <div class="form-group form-group-md ">
+                                                                <label class="animated">Enter PAN</label>
+                                                                <input type="text" class="form-control text-light inputTextDataName"
+                                                                    id="txtPan" value="" placeholder="Enter Pan"
+                                                                    style="font-size: 20px;
+                                                                        height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <div class="form-group form-group-md ">
+                                                                <label class="animated">Enter Mobile Number</label>
+                                                                <input type="text" class="form-control text-light inputTextDataName"
+                                                                    id="txtMobileNum" value="" placeholder="Enter Mobile"
+                                                                    style="font-size: 20px;
+                                                                        height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                                                            <div class="form-group form-group-md ">
+                                                                <label class="">Enter Email ID</label>
+                                                                <input type="text" class="form-control text-light inputTextDataName"
+                                                                    id="txtEmail" value="" placeholder="Enter Email"
+                                                                    style="font-size: 20px;
+                                                                        height: 35px;margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                
+                                                            </div>
+                                                            <div class="clearfix hidden-xs"></div>
+                
+                                                        </div>
+                                                        <div class="row">
+                
+                                                            <input type="button" onclick="decrement(2);" id="btnsignin" value="Previous"
+                                                                class="btn btn-lg btn-style btn-filled text-left text-semibold btn-signin">
+                                                            <a data-toggle="modal" data-target="#basicModal">
+                                                                <input type="button" onclick="increment(3);" id="btnsignin"
+                                                                    value="Proceed"
+                                                                    class="btn btn-lg btn-style btn-filled pull-right text-semibold btn-signin">
+                                                            </a>
+                
+                                                            <!-- <div class="row text-center">
+                                                                    <a onclick="" data-toggle="modal" data-target="#otmSuccess"
+                                                                        style="align-self:center; color:#ed1965;" value="Confirm" class="">
+                                                                        <span class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
+                                                                            Confirm</span>
+                                                                    </a>
+                                                                </div> -->
+                
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                      
                                     </div>
                                 </div>
                             </div>

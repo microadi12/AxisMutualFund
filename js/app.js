@@ -1,48 +1,69 @@
 $(document).ready(
     console.log('aditya singh'),
 
-   
-
-   
-
+    $('.stepperFrame2').css('display','none'),
+    $('.stepperFrame3').css('display','none'),
 )
 
 var count = 0;
 
 function increment(value) {
    
-
     var num = value;
      console.log(value);
      count++;
      switch(num) {
-        case "1":
-
-        console.log('aditya')
-        $('.stepperFrame1').css("display", "none");
-        console.log('aditya')
-        $('.stepperFrame2').css("display", "block");
-       
-          break;
-        case "2":
-        
-          break;
+        case 1:
+            return (()=>{
+              $('.stepperFrame1').css('display','none')
+              $('.li1').addClass('completed')
+              $('.stepperFrame2').fadeIn();
+              $('.stepperFrame3').css('display','none')
+            })()
+        case 2:
+          return (()=>{
+            $('.stepperFrame2').css('display','none')
+            $('.li2').addClass('completed')
+            $('.stepperFrame3').fadeIn();
+            $('.stepperFrame1').css('display','none')
+          })()
+        case 3:
+          return (()=>{
+            $('.li3').addClass('completed')
+            // $('.stepperFrame3').fadeIn();
+            // console.log('aditya')
+            // $('.stepperFrame2').fadeOut();
+          })()
         default:
-          text = "I have never heard of that fruit...";
+          return 
       }
-    
-   
-
+  
   console.log(count);
 
 }
 
-function decrement(){
+function decrement(value){
+  var num = value;
+  console.log(value);
+  count--;
+  switch(num) {
+     case 1:
+         return (()=>{
+          $('.stepperFrame2').css('display','none')
+          $('.stepperFrame1').fadeIn();
+          $('.stepperFrame3').css('display','none')
 
-    $('.stepperFrame1').css('display:block;');
-    $('.stepperFrame2').css('display:none;')
-  
-  count--
-
-  console.log(count);
+         })()
+     case 2:
+       return (()=>{
+        $('.stepperFrame1').css('display','none')
+        $('.stepperFrame2').fadeIn();
+        $('.stepperFrame3').css('display','none')
+       })()
+     case 3:
+       return (()=>{
+       })()
+     default:
+       return 
+   }
 }
