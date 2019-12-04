@@ -12,6 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/emandate.css">
+    <script src="js/app.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -276,82 +278,57 @@
                     </div>
                     <!--./post-page-header-->
                     <!-- .payment-->
-                    <div class="row payment_status" style="margin-top: 40px;
-                    padding: 0px 30px 0px 20px;">
-                        <div class="col-md-6 col-xs-6">
+                    <div class="row payment-status-ad payment_status ">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="item">
-                                <span class="status_name" style="font-size: 21px;
-                                line-height: 70px;
-                                /* font-family: montserrat; */
-                                font-weight: 600;
-                                word-spacing: 1px;">SIP Registration Amount</span>
+                                <span class="status-name" >SIP Registration Amount</span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-6" style="text-align: right;">
+                        <div class="col-xs-6 col-sm-6 col-md-6 text-right">
                             <div class="item pull-right">
-                                <span class="name text-right" style="    font-size: 13px;">Installment Amount</span>
-                                <span class="value text-bold" style="font-size:25px;">Rs. 500</span>
+                                <span class="name text-right" style="font-size: 13px;">Installment Amount</span>
+                                <span class="value text-bold" style="font-size:24px;">Rs. 500</span>
                             </div>
                         </div>
                     </div>
                     <div class="navtab-theme" style="margin-top: 35px;">
-                        <ul class="nav nav-tabs" style="justify-content: right;">
+                        <ul class="nav nav-tabs justify-right">
                             <li class="active">
-                                <a href="#OtmProcess" data-toggle="tab"
-                                    style="font-size:18px; padding:12px 55px;">OTM</a>
+                                <a href="#OtmProcess" class="tab-padd" data-toggle="tab"
+                                >OTM</a>
                             </li>
                             <li class="">
-                                <a href="#UrnProcess" data-toggle="tab"
-                                    style="font-size:18px; padding:12px 55px;">URN</a>
+                                <a href="#UrnProcess" class="tab-padd" data-toggle="tab"
+                                    >URN</a>
                             </li>
                             <li>
-                                <a href="#OnlineProcess" data-toggle="tab"
-                                    style="font-size:18px; padding:12px 55px;">Online Process</a>
+                                <a href="#OnlineProcess" class="tab-padd" data-toggle="tab"
+                                    >Online Process</a>
                             </li>
                         </ul>
                         <div class="tab-content ">
                             <div class="tab-pane active" id="OtmProcess">
+
+
                                 <div class="row" style="margin-top: 10px;">
-                                    <div class="col-md-6">
-                                        <h4 style="    font-size: 21px;
-                                        font-family: montserrat-regular;
-                                        font-weight: bold;
-                                    ">Registered OTMs</h4>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <h4  class="tab-pane-title">Registered OTMs</h4>
                                     </div>
-                                    <div class="col-md-6" style="    margin-top: 10px;
-                                    text-align: end;
-                                ">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 align-item">
 
                                         <img src="images/addOtmIcon.png" style="   width: 25px;">
 
-                                        <span style="
-                                               text-align: right;
-    color: #ed1965;
-    font-family: inherit;
-    /* color: black; */
-    /* font-size: 16px; */
-    font-weight: 500;
-    /* padding-top: 55px; */
-    /* margin-top: 11px; */
-    vertical-align: middle;">Register New OTM </span>
+                                        <span class="new_otm">Register New OTM </span>
 
                                     </div>
                                 </div>
                                 <div class="row" style="margin: 10px 0px;">
                                     <div class="col-md-12">
                                         <form>
-                                            <div class="form-group col-md-4">
+                                            <div class="form-group col-xs-12 col-sm-12 col-md-4">
                                                 <label for="exampleFormControlSelect1"
                                                     style="margin-top: 6px;">Bank</label>
-                                                <select class="form-control " id="exampleFormControlSelect1" style="position: absolute;
-                                                border-radius: 3px;
-                                                margin-left: 14px;
-                                                font-size: 14px;
-                                                font-family: montserrat-regular;
-                                                display: inline;
-                                                /* border-bottom: none; */
-                                                border: 1px solid #999999;
-                                                height: 27px;">
+                                                <select class=" select_Input form-control" id="exampleFormControlSelect1">
                                                     <option>All</option>
                                                     <option>Axis Bank</option>
                                                     <option>ICICI Bank</option>
@@ -366,35 +343,33 @@
                                     <div class="card-scroll">
                                         <div class="row row-md row-grid">
                                             <div class="col-md-4 col-item">
-                                                <div class="card card-theme-3">
+                                                <div class="card card-theme-3 bg-color"
+                                                    >
                                                     <div class="card-body">
                                                         <div class="card-title">
                                                             <span class="heading">AXIS BANk</span>
-                                                            <span class="checkbox checkbox-green">
-                                                                <input id="indeterminateCheckbox" class="styled"
-                                                                    type="checkbox" onclick="changeState(this)">
-                                                                <label></label>
-                                                            </span>
-                                                            <div class="clearfix"></div>
+
+                                       .                     <div class="clearfix"></div>
                                                         </div>
                                                         <div class="list-group-theme ">
                                                             <div class="item item-full">
-                                                                <span class="name">Account Number</span>
-                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                                <span class="name  py-color">Account Number</span>
+                                                                <span class="value">XXXXXXXXXXXXX758</span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Expiry Date</span>
+                                                                <span class="name  py-color">Expiry Date</span>
                                                                 <span class="value">14th Oct 2020</span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Maximum Amount</span>
-                                                                <span class="value">Rs. 2,00,000
+                                                                <span class="name  py-color">Maximum Amount</span>
+                                                                <span class="value"><span>&#8377;</span>75000.00
                                                                     <small>(Rupees Two Lakhs)</small>
                                                                 </span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Registered OTM No.</span>
-                                                                <span class="value">AB1237568</span>
+                                                                <span class="name  py-color">Registered OTM
+                                                                    Number</span>
+                                                                <span class="value">APAP5768E88796011</span>
                                                             </div>
 
                                                         </div>
@@ -402,35 +377,31 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-item">
-                                                <div class="card card-theme-3">
+                                                <div class="card card-theme-3 bg-color">
                                                     <div class="card-body">
                                                         <div class="card-title">
                                                             <span class="heading">AXIS BANk</span>
-                                                            <span class="checkbox checkbox-green">
-                                                                <input id="indeterminateCheckbox" class="styled"
-                                                                    type="checkbox" onclick="changeState(this)">
-                                                                <label></label>
-                                                            </span>
+
                                                             <div class="clearfix"></div>
                                                         </div>
                                                         <div class="list-group-theme ">
                                                             <div class="item item-full">
-                                                                <span class="name">Account Number</span>
-                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                                <span class="py-color name">Account Number</span>
+                                                                <span class="value">XXXXXXXXXXXXX758</span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Expiry Date</span>
+                                                                <span class="py-color name">Expiry Date</span>
                                                                 <span class="value">14th Oct 2020</span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Maximum Amount</span>
-                                                                <span class="value">Rs. 2,00,000
+                                                                <span class="py-color name">Maximum Amount</span>
+                                                                <span class="value"><span>&#8377;</span>75000.00
                                                                     <small>(Rupees Two Lakhs)</small>
                                                                 </span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Registered OTM No.</span>
-                                                                <span class="value">AB1237568</span>
+                                                                <span class="py-color name">Registered OTM Number</span>
+                                                                <span class="value">APAP5768E88796011</span>
                                                             </div>
 
                                                         </div>
@@ -438,35 +409,32 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-item">
-                                                <div class="card card-theme-3">
+                                                <div class="card card-theme-3 bg-color">
                                                     <div class="card-body">
                                                         <div class="card-title">
                                                             <span class="heading">AXIS BANk</span>
-                                                            <span class="checkbox checkbox-green">
-                                                                <input id="indeterminateCheckbox" class="styled"
-                                                                    type="checkbox" onclick="changeState(this)">
-                                                                <label></label>
-                                                            </span>
+
                                                             <div class="clearfix"></div>
                                                         </div>
                                                         <div class="list-group-theme ">
                                                             <div class="item item-full">
-                                                                <span class="name">Account Number</span>
-                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                                <span class="py-color name ">Account Number</span>
+                                                                <span class="value">XXXXXXXXXXXXX758</span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Expiry Date</span>
+                                                                <span class="name py-color">Expiry Date</span>
                                                                 <span class="value">14th Oct 2020</span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Maximum Amount</span>
-                                                                <span class="value">Rs. 2,00,000
+                                                                <span class="name  py-color">Maximum Amount</span>
+                                                                <span class="value"><span>&#8377;</span>75000.00
                                                                     <small>(Rupees Two Lakhs)</small>
                                                                 </span>
                                                             </div>
                                                             <div class="item item-full">
-                                                                <span class="name">Registered OTM No.</span>
-                                                                <span class="value">AB1237568</span>
+                                                                <span class="name  py-color">Registered OTM
+                                                                    Number</span>
+                                                                <span class="value">APAP5768E88796011</span>
                                                             </div>
 
                                                         </div>
@@ -474,28 +442,25 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="">
-                                        <div class="card card-theme-3"
-                                            style="    padding: 25px;    background-color: #ee85ad1a;margin-bottom: 25px">
-                                            <p style="    margin: 0px;
-                                            color: #373737;
-                                            font-family: montserrat-regular;
-                                            font-weight: bold;
-                                            font-size: 16px;
-                                            letter-spacing: 1.2px;margin-bottom: 25px;">Schedule your earlier SIP date
+                                        <div class="card card-theme-3 card-theme-design">
+                                            <p>Schedule your earlier
+                                                SIP date
                                                 as you are OTM
                                                 registered.</p>
 
                                             <div class="checkbox" style="top: 10px">
                                                 <input type="checkbox" id="chk_ISCheck" name="checkbox">
                                                 <label for="" class="form-label-xs" style="    font-size: 12px;
-                                                    line-height: 20px;
-                                                    padding-left: 15px;
-                                                    font-family: montserrat-regular;
-                                                    color: #707070;">
+                                                            line-height: 20px;
+                                                            padding-left: 15px;
+                                                            font-family: montserrat-regular;
+                                                            color: #707070;">
                                                     Earlier date was 12th Nov 2019, Would you like to start you
                                                     are SIP on 5th of every month.
 
@@ -505,10 +470,10 @@
                                             <div class="checkbox" style="top: 10px;margin-top: 0px;">
                                                 <input type="checkbox" id="chk_ISCheck" name="checkbox">
                                                 <label for="" class="form-label-xs" style="    font-size: 12px;
-                                                    line-height: 20px;
-                                                    padding-left: 15px;
-                                                    font-family: montserrat-regular;
-                                                    color: #707070;">
+                                                            line-height: 20px;
+                                                            padding-left: 15px;
+                                                            font-family: montserrat-regular;
+                                                            color: #707070;">
                                                     You have not registered for OTM yet would you like to Register.
 
                                                 </label>
@@ -532,7 +497,7 @@
                                     <ul style="padding-left: 0px;">
                                         <li style="font-size: 12px;">
                                             <p style="color: #000000c4;
-                                            font-weight: 600;">
+                                                    font-weight: 600;">
                                                 I/We have read, understood & accepted of <a href="#" target="_blank">
                                                     <span class="color-base">Statement of Additional
                                                         Document</span></a> of Axis Mutual Fund [AMF] and <a href="#"
@@ -549,11 +514,13 @@
                                         </li>
                                         <li style="font-size: 12px;">
                                             <p style="color: #000000c4;
-                                            font-weight: 600;">I am/we are not a US Person nor resident of Canada</p>
+                                                    font-weight: 600;">I am/we are not a US Person nor resident of
+                                                Canada</p>
                                         </li>
                                         <li style="font-size: 12px;">
                                             <p style="color: #000000c4;
-                                            font-weight: 600;">I/We confirm that the subscription to units is made
+                                                    font-weight: 600;">I/We confirm that the subscription to units is
+                                                made
                                                 through my bank
                                                 account/ joint bank account where first account holder is one of the
                                                 joint holders of the bank account. Investor will receive redemption /
@@ -563,13 +530,13 @@
                                     </ul>
                                 </div>
                                 <div class="row text-center">
-                                    <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal"
+                                    <a onclick="" data-toggle="modal" data-target="#OtmSuccess"
                                         style="align-self:center; color:#ed1965;" value="Confirm" class="">
                                         <span class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
                                             Confirm</span>
                                     </a>
                                 </div>
-                                <div class="modal fade" id="registerOtmModal" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="OtmSuccess" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
                                     style="z-index:1061; top:10%;">
                                     <div class="container">
@@ -577,27 +544,28 @@
                                             style="width: 500px;">
                                             <div class="modal-content" style="border-radius:10px">
                                                 <!-- <div class="modal-header">
-                                   
-                                </div> -->
+                                           
+                                        </div> -->
                                                 <div class="modal-body" style="padding: 20px">
                                                     <img src="images/portfolio_piggy_bank.png" class="text-center"
                                                         style="    display: block;
-                                                    width: 22%;
-                                                    margin-left: auto;
-                                                    margin-right: auto;margin-top:20px">
+                                                            width: 22%;
+                                                            margin-left: auto;
+                                                            margin-right: auto;margin-top:20px">
                                                     <h3 class="color-base text-center" style=" font-family: montserrat-semibold;
-                                                     text-transform: uppercase;
-                                                     word-spacing: 2px;
-                                                     font-size: 22px;">Thank You For Your Transaction</h3>
+                                                             text-transform: uppercase;
+                                                             word-spacing: 2px;
+                                                             font-size: 22px;">Thank You For Your Transaction</h3>
                                                     <h5 class="text-center" style="font-weight: 600;
-                                                     font-size: 14px">Reference #41530588</h5>
+                                                             font-size: 14px">Reference #41530588</h5>
                                                     <p style="    font-size: 12px;
-                                                    text-align: center;
-                                                    margin-top: 36px;
-                                                    color: #494949;
-                                                    font-family: montserrat-regular;
-                                                    font-weight: 600;
-                                                    word-spacing: 1px;">You have not registered for OTM yet would you
+                                                            text-align: center;
+                                                            margin-top: 36px;
+                                                            color: #494949;
+                                                            font-family: montserrat-regular;
+                                                            font-weight: 600;
+                                                            word-spacing: 1px;">You have not registered for OTM yet
+                                                        would you
                                                         like to <a href="#" target="_blank"><span
                                                                 class="color-base">Register now?</span></a></p>
                                                     <div class=" form-btns text-center"
@@ -1033,38 +1001,38 @@
                                                         </div>
                                                     </div>
                                                     <!-- <div>
-                                                        <div class="card card-theme-3">
-                                                            <div class="card-body">
-                                                                <div class="card-title">
-                                                                    <span class="heading">AXIS BANk</span>
-                                                                    <span class="checkbox checkbox-green">
-                                                                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
-                                                                        <label></label>
-                                                                    </span>
-                                                                    <div class="clearfix"></div>
+                                                                <div class="card card-theme-3">
+                                                                    <div class="card-body">
+                                                                        <div class="card-title">
+                                                                            <span class="heading">AXIS BANk</span>
+                                                                            <span class="checkbox checkbox-green">
+                                                                                <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
+                                                                                <label></label>
+                                                                            </span>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                        <div class="list-group-theme ">
+                                                                            <div class="item item-full">
+                                                                                <span class="name">Account Number</span>
+                                                                                <span class="value">XXXX XXXX14 4082</span>
+                                                                            </div>
+                                                                            <div class="item item-full">
+                                                                                <span class="name">Expiry Date</span>
+                                                                                <span class="value">14th Oct 2020</span>
+                                                                            </div>
+                                                                            <div class="item item-full">
+                                                                                <span class="name">Maximum Amount</span>
+                                                                                <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
+                                                                            </div>
+                                                                            <div class="item item-full">
+                                                                                <span class="name">Registered OTM No.</span>
+                                                                                <span class="value">AB1237568</span>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="list-group-theme ">
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Account Number</span>
-                                                                        <span class="value">XXXX XXXX14 4082</span>
-                                                                    </div>
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Expiry Date</span>
-                                                                        <span class="value">14th Oct 2020</span>
-                                                                    </div>
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Maximum Amount</span>
-                                                                        <span class="value">Rs. 2,00,000 <small>(Rupees Two Lakhs)</small></span>
-                                                                    </div>
-                                                                    <div class="item item-full">
-                                                                        <span class="name">Registered OTM No.</span>
-                                                                        <span class="value">AB1237568</span>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
+                                                            </div> -->
                                                 </div>
                                                 <div class="row">
                                                     <div class="clearfix height-20 visible-xs-block"></div>
@@ -1201,15 +1169,18 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- /.payment-->
-                </div>
-            </div>
-            <!--/.container-->
 
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.payment-->
+            </div>
         </div>
-        <div class="overlay-light"></div>
+        <!--/.container-->
+
+    </div>
+    <div class="overlay-light"></div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/vendor.min.js"></script>
