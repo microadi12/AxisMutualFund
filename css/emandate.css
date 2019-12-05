@@ -277,11 +277,14 @@ color: #707070;
     cursor: pointer;
 }
 .m-tb{
-    margin-top:2rem; margin-bottom:1rem  
+    margin-top:2rem !important; 
+    margin-bottom:1rem !important;
+
 }
 .radio-selection{
     font-family: 'montserrat-semibold';
-    font-size: 18px;
+    font-size: 18px !important;
+    
 }
 
 /* media queries for Register Otm */
@@ -299,6 +302,24 @@ color: #707070;
     margin-right: 0px !important;
     margin-bottom: 50px;
 }
+/* Otm_page responsive */
+.radio-selection{
+    padding-right: 8px;
+}
+.otm-title-sm{
+    top:40px;
+    padding: 12px;
+}
+.new-add-sm{
+    top:36px;
+    padding: 12px;
+}
+/* payment-sip-method-copy */
+.payment-status-ad {
+    margin-top: 60px;
+    padding: 0px 30px 0px 20px !important;
+}
+
 }
 @media only screen and (max-width: 768px) {
 .mr-50 { 
@@ -314,6 +335,36 @@ color: #707070;
 .font-size{
     font-size:14px !important; 
 }
+
+/* otm_page responive */
+
+.otm-title{
+   top:33px;
+   padding: 14px;
+}
+.new-add{
+top:40px;
+padding: 15px;
+
+}
+/* payment-sip-method-copy */
+.payment-status-ad {
+        margin-top: 60px;
+        padding: 0px 30px 0px 20px !important;
+}
+.card-theme-design label {
+    font-size: 13px;
+    
+}
+.py-color{
+    color: #33333380 !important;
+    font-size: 13px !important;
+}
+.payment-status-ad {
+    margin-top: 40px;
+    padding: 0px 30px 0px 20px !important;
+}
+
 }
 @media only screen and (max-width: 475px){
 .ml-50{
@@ -329,11 +380,35 @@ margin-right: 0px !important;
     font-size: 17px;
    
 }
+/* otm-page */
+.m-tb{
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+/* payment-sip-method-copy */
+.item-pad{
+    padding: 13px 0px;
+}
+.status-name{
+    font-size: 15px !important;
+    line-height: 30px !important
+}
+
+.payment-status-ad {
+    margin-top: 40px;
+    padding: 0px 30px 0px 20px !important;
+}
+
 }
 @media only screen and (max-width: 380px){
 .font-size{
     font-size:13px !important; 
 }
+/* otm_page */
+.container {
+    width: 450px !important;
+}
+/* payment-sip-methed-copy */
 
 
 }
