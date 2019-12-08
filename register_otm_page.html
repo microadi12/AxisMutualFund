@@ -10,6 +10,9 @@
     <link rel="icon" href="../../favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/emandate.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+
 
 </head>
 
@@ -681,7 +684,7 @@
                             <h2 class="otm-title">Register OTM</h2>
                             <div class="steps-theme-4">
                                 <ul class="list-unstyled clearfix" style="margin-bottom: 1.7rem;">
-                                    <li class="w-150" >
+                                    <li class="w-150">
                                         <a href="javascript:void(0)">
                                             <span class="prog_num">01</span>
                                             <i class="icon-tick"></i>
@@ -738,7 +741,7 @@
 
                                         </div>
                                     </div>
-                                    <!-- <div class="stepperFrame2">
+                                    <div class="stepperFrame2">
                                         <div class="intial">
                                             <div class="form-group form-group-md">
                                                 <label class="">Enter IFCS Code</label>
@@ -812,17 +815,73 @@
                                         </div>
                                         <div class="row">
 
-                                            <input type="button" onclick="nextStep();" id="btnsignin" value="Previous"
+                                            <input type="button" onclick="decrement();" id="btnsignin" value="Previous"
                                                 class="btn btn-lg btn-style btn-filled text-left text-semibold btn-signin">
 
-                                            <input type="button" onclick="nextStep();" id="btnsignin" value="Next"
+                                            <input type="button" onclick="increment();" id="btnsignin" value="Next"
                                                 class="btn btn-lg btn-style btn-filled pull-right text-semibold btn-signin">
 
 
+                                                <!-- <div class="row text-center">
+                                                    <a onclick="" data-toggle="modal" data-target="#otmSuccess"
+                                                        style="align-self:center; color:#ed1965;" value="Confirm" class="">
+                                                        <span class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
+                                                            Confirm</span>
+                                                    </a>
+                                                </div> -->
+                        
                                         </div>
-
-
-                                    </div> -->
+                                        <div class="row text-center">
+                                            <a onclick="" data-toggle="modal" data-target="#registerOtmModal"
+                                                style="align-self:center; color:#ed1965;" value="Confirm" class="">
+                                                <span class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
+                                                    Confirm</span>
+                                            </a>
+                                        </div>
+                                        <div class="modal fade" id="registerOtmModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+                                            style="z-index:1061; top:10%;">
+                                            <div class="container">
+                                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                                    style="width: 500px;">
+                                                    <div class="modal-content" style="border-radius:10px">
+                                                        <!-- <div class="modal-header">
+                                                   
+                                                </div> -->
+                                                        <div class="modal-body" style="padding: 20px">
+                                                            <img src="images/portfolio_piggy_bank.png" class="text-center"
+                                                                style="    display: block;
+                                                                    width: 22%;
+                                                                    margin-left: auto;
+                                                                    margin-right: auto;margin-top:20px">
+                                                            <h3 class="color-base text-center" style=" font-family: montserrat-semibold;
+                                                                     text-transform: uppercase;
+                                                                     word-spacing: 2px;
+                                                                     font-size: 22px;">Thank You For Your Transaction</h3>
+                                                            <h5 class="text-center" style="font-weight: 600;
+                                                                     font-size: 14px">Reference #41530588</h5>
+                                                            <p style="    font-size: 12px;
+                                                                    text-align: center;
+                                                                    margin-top: 36px;
+                                                                    color: #494949;
+                                                                    font-family: montserrat-regular;
+                                                                    font-weight: 600;
+                                                                    word-spacing: 1px;">You have not registered for OTM yet
+                                                                would you
+                                                                like to <a href="#" target="_blank"><span
+                                                                        class="color-base">Register now?</span></a></p>
+                                                            <div class=" form-btns text-center"
+                                                                style="    margin-bottom: 10px;">
+                                                                <input type="button" id="btnsignin" value="Done"
+                                                                    class="btn btn-lg btn-style btn-filled text-lighter btn-signin">
+        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
