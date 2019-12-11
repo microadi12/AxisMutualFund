@@ -131,7 +131,9 @@ ul li p {
     color: #ed1965 !important;
 }
 .final-h{
-    height: 270px;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .selectdiv {
     position: relative;
@@ -179,13 +181,15 @@ ul li p {
     height: 50px;
     float: right;
     margin: 5px 0px;
-    padding: 0px 24px;
     font-size: 16px;
     line-height: 1.75;
     color: #333;
     background-color: #ffffff;
     background-image: none;
-    
+    padding: 0px 61px 0 4px;
+    border: none;
+    border-bottom: 1px solid;
+    outline: 0;
     -ms-word-break: normal;
     word-break: normal;
   }
@@ -311,7 +315,21 @@ color: #707070;
     font-weight: 600;
     word-spacing: 1px;
 }
-
+slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-size: 6px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    opacity: 0.25;
+    font-size: 60px;
+    -webkit-font-smoothing: antialiased;
+}
 
 
 /* otm_page css */
