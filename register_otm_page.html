@@ -625,7 +625,7 @@
                             <a href="#" class="btn-back" id=""></a>
                             <span class="page-category font-size">Register</span>
 
-                            <h1 class="page-title ">One Time &amp; Mandate</h1>
+                            <h1 class="page-title ">One Time Mandate</h1>
                         </div>
                     </div>
                 </div>
@@ -730,7 +730,7 @@
                                         <div class="clearfix hidden-xs"></div>
                                         <div class="form-group form-btns text-right">
                                             <input type="button" onclick="increment(1);" id="btnsignin" value="Next"
-                                                class="btn btn-lg btn-filled text-semibold btn-signin">
+                                                class="btn btn-lg btn-style btn-filled text-semibold btn-signin">
 
                                         </div>
                                     </div>
@@ -740,35 +740,35 @@
                                                 <label class="">Enter IFCS Code</label>
                                                 <input type="text"
                                                     class="form-control text-light stepperField inputTextDataName"
-                                                    id="txtIfsc" value="" placeholder="Enter Name">
+                                                    id="txtIfsc" value="" placeholder="IFSC Code">
                                             </div>
                                             <div class="clearfix hidden-xs"></div>
                                             <div class="form-group form-group-md ">
                                                 <label class="animated">Enter Bank Name</label>
                                                 <input type="text"
                                                     class="form-control text-light stepperField inputTextDataName"
-                                                    id="txtPan" value="" placeholder="Enter Pan">
+                                                    id="txtPan" value="" placeholder="Bank Name">
                                             </div>
                                             <div class="clearfix hidden-xs"></div>
                                             <div class="form-group form-group-md ">
-                                                <label class="animated">Enter Account Type</label>
-                                                <input type="text"
-                                                    class="form-control text-light stepperField inputTextDataName"
-                                                    id="txtMobileNum" value="" placeholder="Enter Mobile">
-                                            </div>
+                                                    <label class="animated">Enter Account Type</label>
+                                                    <input type="text"
+                                                        class="form-control text-light stepperField inputTextDataName"
+                                                        id="txtMobileNum" value="" placeholder="Account Type">
+                                                </div>
                                             <div class="clearfix hidden-xs"></div>
                                             <div class="form-group form-group-md ">
                                                 <label class="">Enter Account Number</label>
                                                 <input type="text"
                                                     class="form-control text-light stepperField inputTextDataName"
-                                                    id="txtEmail" value="" placeholder="Enter Email">
+                                                    id="txtEmail" value="" placeholder="Account Number">
                                             </div>
                                             <div class="clearfix hidden-xs"></div>
-                                            <input type="button" onclick="decrement(1);" id="btnsignin" value="Previous"
-                                                class="btn btn-lg btn-filled btn-outborder text-left text-semibold btn-signin">
+                                            <input type="button" onclick="decrement(1);" id="btnsignin" value="Back"
+                                                class="btn btn-lg btn-style btn-filled btn-outborder text-semibold ">
 
                                             <input type="button" onclick="increment(2);" id="btnsignin" value="Next"
-                                                class="btn btn-lg  btn-filled pull-right text-semibold btn-signin">
+                                                class="btn btn-lg btn-style btn-filled pull-right text-semibold ">
                                         </div>
 
                                         <div class="row text-center">
@@ -780,10 +780,8 @@
                                         <div class="final-h" >
                                             <div class="form-group form-group-md">
                                                 <label class="">Enter Amount</label>
-                                                <input type="text" class="form-control text-light inputTextDataName"
-                                                    id="txtName" value="" placeholder="Enter Amount"
-                                                    style="font-size: 20px;
-                                                        height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                <input type="text" class="form-control text-light stepperField inputTextDataName"
+                                                    id="txtName" value="" placeholder="Enter Amount"">
                                             </div>
                                             <div class="clearfix hidden-xs"></div>
                                             <div class="form-group form-group-md">
@@ -934,11 +932,11 @@
                                             </div>
                                         </div>
                                         <div class="row" style="margin-top: 40px;">
-                                            <input type="button" onclick="decrement(2);" id="btnsignin" value="Previous"
-                                                class="btn btn-lg btn-outborder  btn-filled  text-left text-semibold btn-signin">
+                                            <input type="button" onclick="decrement(2);" id="btnsignin" value="Cancel"
+                                                class="btn btn-lg btn-style btn-outborder btn-filled text-semibold ">
                                             <a data-toggle="modal" data-target="#basicModal">
                                                 <input type="button" id="btnsignin" value="Proceed"
-                                                    class="btn btn-lg  btn-filled pull-right text-semibold btn-signin">
+                                                    class="btn btn-lg btn-style btn-filled pull-right text-semibold ">
                                             </a>
                                         </div>
                                     </div>
@@ -953,7 +951,7 @@
                     <div class="modal-dialog" style="top:100px">
                         <div class="modal-content">
                             <div class="modal-body" style="padding: 20px;">
-                                <button type="button" class="close" data-dismiss="modal"
+                                <button type="button" class="close modal-close-icon" data-dismiss="modal"
                                     aria-hidden="true">&times;</button>
                                 <div class="">
                                     <h2 class="otm-title">Confirm Details</h2>
@@ -1054,7 +1052,7 @@
                                             class="btn btn-sm btn-style btn-outborder btn-filled btn-focus pull-left text-semibold btn-signin">
                                     </a>
                                     <a data-toggle="modal" data-target="#otmDone">
-                                        <input type="button" id="btnsignin" value="Submit"
+                                        <input type="button" id="btnsignin" value="Submit" data-dismiss="modal" aria-hidden="true"
                                             class="btn btn-sm btn-style btn-filled pull-right text-semibold btn-signin">
                                     </a>
                                 </div>
@@ -1082,16 +1080,13 @@
                                 <h4 class="text-center" style="margin-bottom: 20px;">OTM has been <br> submitted
                                     successfully!</h4>
                                 <div class=" form-btns text-center" style="margin-bottom: 10px;">
-                                    <input type="button" id="btnsignin" value="Done"
+                                    <input type="button" id="btnsignin" value="Done" data-dismiss="modal" aria-hidden="true"
                                         class="btn btn-lg btn-style btn-filled text-lighter btn-signin">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="text-center btn-next sticky-btn" id="floating_btn">
-                        <input type="button" class="btn btn-lg btn-style btn-filled text-semibold" id="btnContinue" value="Continue" onclick="redirecttoNextPage()" disabled="disabled">
-                    </div> -->
             </div>
         </div>
     </div>

@@ -203,7 +203,7 @@
                         <img src="images/logo.png">
                     </a>
                 </div>
-                <div class="navbar-collapse" id="">
+                <div class="navbar-collapse" id=" ">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown user-dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle user-info hidden-xs"
@@ -306,9 +306,8 @@
                     <form>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="form-group">
-                                <span class="icon-search-outline" style="position:absolute; top:8px; left:10px;"></span>
-                                <input type="search" class="form-control" placeholder="" style="border: 2px solid #e2e0e0;
-                                border-radius: 4px;">
+                                <span class="icon-search-outline search-icon" style=""></span>
+                                <input type="search" class="form-control search-placeholder" placeholder="Search" style="">
 
                             </div>
                         </div>
@@ -334,19 +333,14 @@
                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
                         style="z-index:1061; top:10%; position: absolute;">
                         <div class="container">
-                            <div class="modal-dialog modal-dialog-centered" role="document" style="width: 725px;">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content" style="border-radius:10px">
                                     <!-- <div class="modal-header">
                                    
                                 </div> -->
-                                    <div class="modal-body" style="padding: 60px 55px">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                                            style="opacity: 1;
-                                        font-size: 3rem;
-                                        position: absolute;
-                                        top: 20px;
-                                        right: 30px;
-                                        color: #ed1965;">
+                                    <div class="modal-body modal-padd" >
+                                        <button type="button" class="close modal-icon-close" data-dismiss="modal" aria-label="Close"
+                                            style="">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         
@@ -420,31 +414,31 @@
                                                                 <label class="">Enter IFCS Code</label>
                                                                 <input type="text"
                                                                     class="form-control text-light stepperField inputTextDataName"
-                                                                    id="txtIfsc" value="" placeholder="Enter Name">
+                                                                    id="txtIfsc" value="" placeholder="IFSC Code">
                                                             </div>
                                                             <div class="clearfix hidden-xs"></div>
                                                             <div class="form-group form-group-md ">
                                                                 <label class="animated">Enter Bank Name</label>
                                                                 <input type="text"
                                                                     class="form-control text-light stepperField inputTextDataName"
-                                                                    id="txtPan" value="" placeholder="Enter Pan">
+                                                                    id="txtPan" value="" placeholder="Bank Name">
                                                             </div>
                                                             <div class="clearfix hidden-xs"></div>
                                                             <div class="form-group form-group-md ">
                                                                 <label class="animated">Enter Account Type</label>
                                                                 <input type="text"
                                                                     class="form-control text-light stepperField inputTextDataName"
-                                                                    id="txtMobileNum" value="" placeholder="Enter Mobile">
+                                                                    id="txtMobileNum" value="" placeholder="Account Type">
                                                             </div>
                                                             <div class="clearfix hidden-xs"></div>
                                                             <div class="form-group form-group-md ">
                                                                 <label class="">Enter Account Number</label>
                                                                 <input type="text"
                                                                     class="form-control text-light stepperField inputTextDataName"
-                                                                    id="txtEmail" value="" placeholder="Enter Email">
+                                                                    id="txtEmail" value="" placeholder="Account Number">
                                                             </div>
                                                             <div class="clearfix hidden-xs"></div>
-                                                            <input type="button" onclick="decrement(1);" id="btnsignin" value="Previous"
+                                                            <input type="button" onclick="decrement(1);" id="btnsignin" value="Back"
                                                                 class="btn btn-lg btn-style btn-filled btn-outborder  text-left text-semibold btn-signin">
                 
                                                             <input type="button" onclick="increment(2);" id="btnsignin" value="Next"
@@ -460,10 +454,9 @@
                                                         <div class="final-h" >
                                                             <div class="form-group form-group-md">
                                                                 <label class="">Enter Amount</label>
-                                                                <input type="text" class="form-control text-light inputTextDataName"
+                                                                <input type="text" class="form-control stepperField text-light inputTextDataName"
                                                                     id="txtName" value="" placeholder="Enter Amount"
-                                                                    style="font-size: 20px;
-                                                                        height: 35px; margin-bottom: 1.8rem;border-bottom-color: #d0d0d0;">
+                                                                 ">
                                                             </div>
                                                             <div class="clearfix hidden-xs"></div>
                                                             <div class="form-group form-group-md">
@@ -615,16 +608,13 @@
                                                         </div>
                                                         <div class="row">
                 
-                                                            <input type="button" onclick="decrement(2);" id="btnsignin" value="Previous"
+                                                            <input type="button" onclick="decrement(2);" id="btnsignin" value="Cancel" 
                                                                 class="btn btn-lg btn-style btn-filled btn-outborder text-left text-semibold btn-signin">
                                                             <a data-toggle="modal" data-target="#basicModal">
-                                                                <input type="button"  id="btnsignin"
-                                                                    value="Proceed"
+                                                                <input type="button"  id="btnsignin" value="Proceed" data-dismiss="modal" aria-label="Close"
                                                                     class="btn btn-lg btn-style btn-filled pull-right text-semibold btn-signin">
                                                             </a>
-                
-                                                           
-                
+
                                                         </div>
                                                     </div>
                                                 </form>
@@ -787,11 +777,11 @@
 
                         <div class="row confirm-modal-row">
                             <a data-toggle="modal" data-target="#registerOtmModal">
-                                <input type="button" id="btnsignin" value="Edit"
+                                <input type="button" id="btnsignin" value="Edit" data-dismiss="modal" aria-label="Close"
                                     class="btn btn-sm btn-style btn-outborder btn-focus pull-left text-semibold btn-signin">
                             </a>
                             <a data-toggle="modal" data-target="#otmDone">
-                                <input type="button" id="btnsignin" value="Submit"
+                                <input type="button" id="btnsignin" value="Submit" data-dismiss="modal" aria-label="Close"
                                     class="btn btn-sm btn-style btn-filled pull-right text-semibold btn-signin">
                             </a>
                         </div>
@@ -818,7 +808,7 @@
                              
                             <h4 class="text-center" style="margin-bottom: 20px;">OTM has been <br> submitted successfully!</h4>
                             <div class=" form-btns text-center" style="margin-bottom: 10px;">
-                                <input type="button" id="btnsignin" value="Done"
+                                <input type="button" id="btnsignin" value="Done"data-dismiss="modal" aria-label="Close"
                                     class="btn btn-lg btn-style btn-filled text-lighter btn-signin">
                             </div>
                         </div>
