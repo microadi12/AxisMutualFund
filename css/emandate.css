@@ -608,9 +608,9 @@ select::-ms-expand {
 
 
     /* otm_page */
-    /* .container {
-    width: 450px !important;
-} */
+    .contain-width {
+    width: 400px !important;
+}
     /* payment-sip-methed-copy */
 
 

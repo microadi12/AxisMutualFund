@@ -21,26 +21,24 @@
     <div class="post-log-wrapper">
         <!-- sidebar holder -->
         <nav class="sidebar">
-            <div class="sidebar-wrapper">
-                <button type="button" class="btn-sidebar-close icon-cancel visible-xs-block visible-sm-block"></button>
+            <div class="sidebar-wrapper active">
+                <button type="button" class="btn-sitebar-close icon-cancel visible-xs-block visible-sm-block"></button>
                 <div class="sidebar-header">
                     <button type="button" id="sidebarCollapse" class="btn-sidebar icon-hamburgermenu"></button>
-                    <a class="sidebar-brand" href="#">
-                        <img src="images/logo-white.png" />
+                    <a class="sidebar-brand" href="javascript:void(0)">
+                        <img src="images/logo-white.png">
                     </a>
                 </div>
                 <ul class="list-unstyled nav-main">
-                    <li>
+                    <li class="active">
                         <a href="dashboard.html">
-                            <i class="icon-dashboard" data-toggle="tooltip" data-placement="right"
-                                title="Dashboard"></i>
+                            <i class="icon-dashboard" data-toggle="tooltip" data-placement="right" title="Dashboard"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a href="portfolio.html">
-                            <i class="icon-portfolio" data-toggle="tooltip" data-placement="right"
-                                title="Portfolio"></i>
+                            <i class="icon-portfolio" data-toggle="tooltip" data-placement="right" title="Portfolio"></i>
                             <span>Portfolio</span>
                         </a>
                     </li>
@@ -52,22 +50,25 @@
                     </li>
                     <li>
                         <a href="systematic_plans.html">
-                            <i class="icon-systematic_plans" data-toggle="tooltip" data-placement="right"
-                                title="Systematic Plans"></i>
+                            <i class="icon-systematic_plans" data-toggle="tooltip" data-placement="right" title="Systematic Plans"></i>
                             <span>Systematic Plans</span>
                         </a>
                     </li>
                     <li>
                         <a href="my_transactions.html">
-                            <i class="icon-my_transactions" data-toggle="tooltip" data-placement="right"
-                                title="My Transactions"></i>
+                            <i class="icon-my_transactions" data-toggle="tooltip" data-placement="right" title="My Transactions"></i>
                             <span>My Transactions</span>
                         </a>
                     </li>
+                    <!-- <li>
+                        <a href="#downloadStatementsSubmenu" class="nav-subnav">
+                            <i class="icon-download" data-toggle="tooltip" data-placement="right" title="Download Statements"></i>
+                            <span>Download Statements</span>
+                        </a>
+                    </li> -->
                     <li>
                         <a href="#investorSubmenu" class="nav-subnav">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512" style="height: 30px;margin-top: -5px">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 30px;">
                                 <defs>
                                     <style>
                                         .cls-1 {
@@ -75,28 +76,19 @@
                                         }
                                     </style>
                                 </defs>
-                                <path class="cls-1"
-                                    d="M76,270a15,15,0,0,0,10.61-4.39L196,156.21l49.39,49.4a15,15,0,0,0,21.22,0L421,51.21V75a15,15,0,0,0,30,0V15c0-.49,0-1-.07-1.48,0-.24-.07-.48-.11-.72s-.06-.48-.11-.72-.14-.58-.21-.86-.09-.37-.14-.56-.2-.59-.31-.88-.11-.33-.18-.49-.27-.59-.41-.88L449.25,8c-.17-.32-.36-.62-.55-.92l-.2-.33c-.27-.4-.55-.79-.86-1.17h0a15.89,15.89,0,0,0-2.17-2.17h0c-.38-.31-.77-.59-1.17-.86L444,2.3c-.3-.19-.6-.38-.92-.55l-.45-.21c-.29-.15-.58-.29-.88-.41s-.33-.12-.49-.18-.58-.22-.88-.31L439.78.5c-.28-.07-.57-.16-.86-.21s-.48-.08-.72-.11l-.72-.11C437,0,436.49,0,436,0H376a15,15,0,0,0,0,30h23.79L256,173.79l-49.39-49.4a15,15,0,0,0-21.22,0l-120,120A15,15,0,0,0,76,270Z"
-                                    transform="translate(0 0)" />
-                                <path class="cls-1" d="M0,497a15,15,0,0,0,15,15H135a15,15,0,0,0,15-15V476H0Z"
-                                    transform="translate(0 0)" />
-                                <path class="cls-1" d="M135,410H15A15,15,0,0,0,0,425v21H150V425A15,15,0,0,0,135,410Z"
-                                    transform="translate(0 0)" />
-                                <path class="cls-1" d="M181,497a15,15,0,0,0,15,15H316a15,15,0,0,0,15-15V476H181Z"
-                                    transform="translate(0 0)" />
-                                <path class="cls-1" d="M362,410H512v36H362Z" transform="translate(0 0)" />
-                                <path class="cls-1" d="M497,212H377a15,15,0,0,0-15,15v21H512V227A15,15,0,0,0,497,212Z"
-                                    transform="translate(0 0)" />
-                                <path class="cls-1" d="M362,278H512v36H362Z" transform="translate(0 0)" />
-                                <path class="cls-1" d="M362,344H512v36H362Z" transform="translate(0 0)" />
-                                <path class="cls-1" d="M362,497a15,15,0,0,0,15,15H497a15,15,0,0,0,15-15V476H362Z"
-                                    transform="translate(0 0)" />
-                                <path class="cls-1" d="M181,410H331v36H181Z" transform="translate(0 0)" />
-                                <path class="cls-1" d="M316,344H196a15,15,0,0,0-15,15v21H331V359A15,15,0,0,0,316,344Z"
-                                    transform="translate(0 0)" />
+                                <path class="cls-1" d="M76,270a15,15,0,0,0,10.61-4.39L196,156.21l49.39,49.4a15,15,0,0,0,21.22,0L421,51.21V75a15,15,0,0,0,30,0V15c0-.49,0-1-.07-1.48,0-.24-.07-.48-.11-.72s-.06-.48-.11-.72-.14-.58-.21-.86-.09-.37-.14-.56-.2-.59-.31-.88-.11-.33-.18-.49-.27-.59-.41-.88L449.25,8c-.17-.32-.36-.62-.55-.92l-.2-.33c-.27-.4-.55-.79-.86-1.17h0a15.89,15.89,0,0,0-2.17-2.17h0c-.38-.31-.77-.59-1.17-.86L444,2.3c-.3-.19-.6-.38-.92-.55l-.45-.21c-.29-.15-.58-.29-.88-.41s-.33-.12-.49-.18-.58-.22-.88-.31L439.78.5c-.28-.07-.57-.16-.86-.21s-.48-.08-.72-.11l-.72-.11C437,0,436.49,0,436,0H376a15,15,0,0,0,0,30h23.79L256,173.79l-49.39-49.4a15,15,0,0,0-21.22,0l-120,120A15,15,0,0,0,76,270Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M0,497a15,15,0,0,0,15,15H135a15,15,0,0,0,15-15V476H0Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M135,410H15A15,15,0,0,0,0,425v21H150V425A15,15,0,0,0,135,410Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M181,497a15,15,0,0,0,15,15H316a15,15,0,0,0,15-15V476H181Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M362,410H512v36H362Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M497,212H377a15,15,0,0,0-15,15v21H512V227A15,15,0,0,0,497,212Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M362,278H512v36H362Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M362,344H512v36H362Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M362,497a15,15,0,0,0,15,15H497a15,15,0,0,0,15-15V476H362Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M181,410H331v36H181Z" transform="translate(0 0)"></path>
+                                <path class="cls-1" d="M316,344H196a15,15,0,0,0-15,15v21H331V359A15,15,0,0,0,316,344Z" transform="translate(0 0)"></path>
                             </svg>
 
-                            <!-- <img src="images/Investor Services.png" alt="Investor Growth Icon"> -->
                             <span>Investor Services</span>
                         </a>
                     </li>
@@ -112,9 +104,9 @@
             </div>
             <div class="expanded-menus">
                 <div class="subnav">
-                    <!-- <div class="btn-sidebar-back">
+                    <div class="btn-sitebar-back">
                         <button type="button" class="btn icon-arrow_next"></button>
-                    </div> -->
+                    </div>
                     <div class="subnav-list-item" id="transactSubmenu">
                         <h2>Transact</h2>
                         <ul class="list-unstyled">
@@ -149,21 +141,42 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
-                    <div class="subnav-list-item" id="investorSubmenu">
-                        <h2>Investor Services</h2>
+                    <div class="subnav-list-item" id="downloadStatementsSubmenu">
+                        <h2>Download Statements</h2>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="download_statement-account_statement.html">
-                                    <i class="icon-download"></i>
-                                    <span>Download <br> Statement</span>
+                                <a href="download_statements-account_statement.html">
+                                    <i class="icon-account_statement"></i>
+                                    <span>Account
+                                        <br> Statement
+                                    </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="otm_page.html">
-                                    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 458.86 512" style="height: 30px;">
+                                <a href="download_statements-captial_gains.html">
+                                    <i class="icon-capital_gains"></i>
+                                    <span>Captial Gains</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="download_statements-stt_letter.html">
+                                    <i class="icon-stt_letter"></i>
+                                    <span>STT Letter</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subnav-list-item" id="investorSubmenu">
+                        <h2>Investor Services</h2>
+                        <ul class="list-unstyled even-list">
+                            <li><a href="javascript:void(0)">
+                                    <i class="icon-download"></i>
+                                    <span>Download <br>
+                                        Statement</span>
+                                </a></li>
+                            <li><a href="otm_page.html">
+                                    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.86 512" style="height: 30px;">
                                         <defs>
                                             <style>
                                                 .cls-1 {
@@ -171,25 +184,15 @@
                                                 }
                                             </style>
                                         </defs>
-                                        <path class="cls-1"
-                                            d="M352.46,220a20,20,0,0,0-20-20h-206a20,20,0,1,0,0,40h206A20,20,0,0,0,352.46,220Z"
-                                            transform="translate(-26.57)" />
-                                        <path class="cls-1" d="M126.46,280a20,20,0,1,0,0,40H251.57a20,20,0,0,0,0-40Z"
-                                            transform="translate(-26.57)" />
-                                        <path class="cls-1"
-                                            d="M173.46,472H106.57a40,40,0,0,1-40-40V80a40,40,0,0,1,40-40H352.46a40,40,0,0,1,40,40V203a20,20,0,1,0,40,0V80a80.09,80.09,0,0,0-80-80H106.57a80.09,80.09,0,0,0-80,80V432a80.09,80.09,0,0,0,80,80h66.89a20,20,0,1,0,0-40Z"
-                                            transform="translate(-26.57)" />
-                                        <path class="cls-1"
-                                            d="M467.88,289.57a60.06,60.06,0,0,0-84.83,0L273.24,399.12a20,20,0,0,0-5,8.34l-23.91,78.73a20,20,0,0,0,24.48,25.08l80.72-22.36a20,20,0,0,0,8.79-5.12L467.89,374.43A60.07,60.07,0,0,0,467.88,289.57Zm-134.1,162.2L293.16,463l11.89-39.13L379.14,350l28.29,28.29ZM439.61,346.13,435.74,350l-28.29-28.29,3.87-3.85a20,20,0,0,1,28.29,28.27Z"
-                                            transform="translate(-26.57)" />
-                                        <path class="cls-1" d="M332.46,120h-206a20,20,0,1,0,0,40h206a20,20,0,0,0,0-40Z"
-                                            transform="translate(-26.57)" />
+                                        <path class="cls-1" d="M352.46,220a20,20,0,0,0-20-20h-206a20,20,0,1,0,0,40h206A20,20,0,0,0,352.46,220Z" transform="translate(-26.57)"></path>
+                                        <path class="cls-1" d="M126.46,280a20,20,0,1,0,0,40H251.57a20,20,0,0,0,0-40Z" transform="translate(-26.57)"></path>
+                                        <path class="cls-1" d="M173.46,472H106.57a40,40,0,0,1-40-40V80a40,40,0,0,1,40-40H352.46a40,40,0,0,1,40,40V203a20,20,0,1,0,40,0V80a80.09,80.09,0,0,0-80-80H106.57a80.09,80.09,0,0,0-80,80V432a80.09,80.09,0,0,0,80,80h66.89a20,20,0,1,0,0-40Z" transform="translate(-26.57)"></path>
+                                        <path class="cls-1" d="M467.88,289.57a60.06,60.06,0,0,0-84.83,0L273.24,399.12a20,20,0,0,0-5,8.34l-23.91,78.73a20,20,0,0,0,24.48,25.08l80.72-22.36a20,20,0,0,0,8.79-5.12L467.89,374.43A60.07,60.07,0,0,0,467.88,289.57Zm-134.1,162.2L293.16,463l11.89-39.13L379.14,350l28.29,28.29ZM439.61,346.13,435.74,350l-28.29-28.29,3.87-3.85a20,20,0,0,1,28.29,28.27Z" transform="translate(-26.57)"></path>
+                                        <path class="cls-1" d="M332.46,120h-206a20,20,0,1,0,0,40h206a20,20,0,0,0,0-40Z" transform="translate(-26.57)"></path>
                                     </svg>
                                     <span>OTM</span>
-                                </a>
-                            </li>
+                                </a></li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -284,14 +287,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row contain-width">
                     <div class="col-xs-6 col-sm-6 col-md-6 otm-title otm-title-sm">
                         <h1>OTM</h1>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 new-add new-add-sm">
 
                         <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal">
-                                <img src="images/addOtmIcon.png" style="   width: 25px;">
+                                <img src="images/addOtmIcon.png" style="width: 25px;">
 
                             <span> Register New OTM</span>
                         </a>
@@ -302,17 +305,17 @@
 
 
 
-                <div class="row m-tb">
+                <div class="row m-tb contain-width">
                     <form>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="form-group">
-                                <span class="icon-search-outline search-icon" style=""></span>
-                                <input type="search" class="form-control search-placeholder" placeholder="Search" style="">
+                                <span class="icon-search-outline search-icon"></span>
+                                <input type="search" class="form-control search-placeholder" placeholder="Search">
 
                             </div>
                         </div>
-                        <div class="col-md-4"></div>
-                        <div class="col-xs-12 col-sm-6 col-md-4" style="text-align: center;">
+                        <div class="col-md-2"></div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 text-center">
                             <div class="radio radio-green radio-inline">
                                 <input type="radio" id="inlineRadio1" value="radioBtnSuccess" name="radioInline"
                                     checked>
@@ -339,8 +342,7 @@
                                    
                                 </div> -->
                                     <div class="modal-body modal-padd" >
-                                        <button type="button" class="close modal-icon-close" data-dismiss="modal" aria-label="Close"
-                                            style="">
+                                        <button type="button" class="close modal-icon-close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         
@@ -455,8 +457,7 @@
                                                             <div class="form-group form-group-md">
                                                                 <label class="">Enter Amount</label>
                                                                 <input type="text" class="form-control stepperField text-light inputTextDataName"
-                                                                    id="txtName" value="" placeholder="Enter Amount"
-                                                                 ">
+                                                                    id="txtName" value="" placeholder="Enter Amount">
                                                             </div>
                                                             <div class="clearfix hidden-xs"></div>
                                                             <div class="form-group form-group-md">
@@ -676,6 +677,8 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
                 <div class="modal-dialog" style="top:100px">
