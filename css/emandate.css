@@ -146,65 +146,19 @@ ul li p {
     overflow-x: hidden;
 }
 
-.selectdiv {
-    position: relative;
-    /*Don't really need this just for demo styling*/
 
-    float: left;
-
-    /* margin: 50px 33%; */
+.form-group.form-group-md .bootstrap-select .dropdown-toggle .filter-option {
+    font-size: 24px;
+    line-height: 25px;
+    border-bottom-color: #d0d0d0 !important;
+    font-family: 'montserrat-light';
+    color:#ccc;
 }
-
-/* IE11 hide native button (thanks Matt!) */
-select::-ms-expand {
-    display: none;
+.form-group .bootstrap-select .dropdown-toggle {
+    
+    border-bottom-color: #d0d0d0 !important;
+    
 }
-
-.selectdiv:after {
-    content: '>';
-    font: 17px "Consolas", monospace;
-    color: #333;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 0px;
-    /*Adjust for position however you want*/
-    color: red;
-    top: 18px;
-    padding: 0 0 2px;
-
-    /*left line */
-
-    position: absolute;
-    pointer-events: none;
-}
-
-.selectdiv select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* Add some styling */
-
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    height: 50px;
-    float: right;
-    margin: 5px 0px;
-    font-size: 16px;
-    line-height: 1.75;
-    color: #333;
-    background-color: #ffffff;
-    background-image: none;
-    padding: 0px 61px 0 4px;
-    border: none;
-    border-bottom: 1px solid;
-    outline: 0;
-    -ms-word-break: normal;
-    word-break: normal;
-}
-
 .search-placeholder {
     border: 2px solid #e2e0e0 !important;
     border-radius: 4px !important;
@@ -597,7 +551,7 @@ select::-ms-expand {
 
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 320px) and (max-width: 380px) {
     .font-size {
         font-size: 13px !important;
     }
@@ -605,13 +559,12 @@ select::-ms-expand {
         padding: 30px 20px;
     }
     
-
-
-    /* otm_page */
-    .contain-width {
-    width: 400px !important;
+/* Payment sip  */
+.status-name {
+    font-size: 13px !important;
+    line-height: 30px !important
 }
-    /* payment-sip-methed-copy */
+  
 
 
 }

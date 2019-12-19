@@ -197,7 +197,7 @@
                 </div>
             </div>
         </nav>
-
+`
         <!-- Page Content Holder -->
         <div class="main-content">
             <nav class="navbar navbar-theme">
@@ -306,8 +306,6 @@
                         </ul>
                         <div class="tab-content ">
                             <div class="tab-pane active" id="OtmProcess">
-
-
                                 <div class="row" style="margin-top: 10px;">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <h4 class="tab-pane-title">Registered OTMs</h4>
@@ -318,8 +316,6 @@
 
                                             <span class="new_otm">Register New OTM </span>
                                         </a>
-
-
                                     </div>
                                 </div>
                                 <div class="row" style="margin: 10px 0px;">
@@ -328,13 +324,12 @@
                                             <div class="form-group col-xs-10 col-sm-10 col-md-4">
                                                 <label for="exampleFormControlSelect1"
                                                     style="margin-top: 6px;">Bank</label>
-                                                <select class="form-control select_Input "
+                                                <select class="form-control select_Input"
                                                     id="exampleFormControlSelect1">
                                                     <option>All</option>
                                                     <option>Axis Bank</option>
                                                     <option>ICICI Bank</option>
                                                     <option>CITI Bank</option>
-                                                    <option>5</option>
                                                 </select>
                                             </div>
                                         </form>
@@ -981,7 +976,6 @@
                                             </div>
                                         </div>
                                     </div>
-
 
                                 </div>
 
@@ -1776,13 +1770,16 @@
                                                 <div class="clearfix hidden-xs"></div>
                                                 <div class="form-group form-group-md ">
                                                     <label class="animated">Enter Account Type</label>
-                                                    <input type="text"
-                                                        class="form-control text-light stepperField inputTextDataName"
-                                                        id="txtMobileNum" value="" placeholder="Account Type">
+                                                    <select class="selectpicker" data-width="100%"
+                                                    id="" tabindex="-98" placeholder="Saving">
+                                                    <option value="Saving">Saving</option>
+                                                    <option value="Current">Current</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
                                                 </div>
                                                 <div class="clearfix hidden-xs"></div>
                                                 <div class="form-group form-group-md ">
-                                                    <label class="">Enter Account Number</label>
+                                                    <label class="animated">Enter Account Number</label>
                                                     <input type="text"
                                                         class="form-control text-light stepperField inputTextDataName"
                                                         id="txtEmail" value="" placeholder="Account Type">
@@ -1824,54 +1821,38 @@
                                                     <div class="row">
                                                         <div class="col-sm-4  col-xs-4">
                                                             <div class="form-group" style="margin: 0">
-                                                                <div class="selectdiv">
-                                                                    <label>
-                                                                        <select style="border-bottom: 1px solid #000">
-                                                                            <option selected>2019</option>
-
-                                                                            <option value="2018">2018</option>
-                                                                            <option value="2017">2017</option>
-                                                                            <option value="2016">2016</option>
-                                                                            <option value="2015">2015</option>
-                                                                        </select>
-                                                                    </label>
-                                                                </div>
+                                                                <select class="selectpicker" data-width="100%"
+                                                                id="" tabindex="-98" placeholder=2019>
+                                                                <option value="2019">2019</option>
+                                                                <option value="2018">2018</option>
+                                                                <option value="2017">2017</option>
+                                                            </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5 col-xs-4">
-                                                            <div class="selectdiv">
-                                                                <label>
-                                                                    <select style="border-bottom: 1px solid #000">
-
-                                                                        <option value="January">January</option>
-                                                                        <option value="February">February</option>
-                                                                        <option value="March">March</option>
-                                                                        <option value="April">April</option>
-                                                                        <option value="May">May</option>
-                                                                        <option value="June">June</option>
-                                                                        <option value="July">July</option>
-                                                                        <option value="Augest">Augest</option>
-                                                                        <option value="September">September</option>
-                                                                        <option value="October">October</option>
-                                                                        <option value="November">November</option>
-                                                                        <option value="December">December</option>
-                                                                    </select>
-                                                                </label>
-                                                            </div>
+                                                            <select class="selectpicker" data-width="100%"
+                                                            id="" tabindex="-98" placeholder="December">
+                                                            <option value="January">January</option>
+                                                            <option value="February">February</option>
+                                                            <option value="March">March</option>
+                                                            <option value="April">April</option>
+                                                            <option value="May">May</option>
+                                                            <option value="June">June</option>
+                                                            <option value="July">July</option>
+                                                            <option value="August">August</option>
+                                                            <option value="September">September</option>
+                                                            <option value="October">October</option>
+                                                            <option value="November">November</option>
+                                                            <option value="December">December</option>
+                                                        </select>
                                                         </div>
                                                         <div class="col-sm-3 col-xs-4">
-                                                            <div class="selectdiv">
-                                                                <label>
-                                                                    <select style="border-bottom: 1px solid #000">
-
-                                                                        <option value="1">1</option>
-                                                                        <option value="2">2</option>
-                                                                        <option value="3">3</option>
-                                                                        <option value="4">4</option>
-                                                                        <option value="5">5</option>
-                                                                    </select>
-                                                                </label>
-                                                            </div>
+                                                            <select class="selectpicker" data-width="100%"
+                                                            id="" tabindex="-98" placeholder="1">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
                                                         </div>
                                                     </div>
 
@@ -1890,54 +1871,38 @@
                                                     <div class="row">
                                                         <div class="col-sm-4  col-xs-4">
                                                             <div class="form-group" style="margin: 0">
-                                                                <div class="selectdiv">
-                                                                    <label>
-                                                                        <select style="border-bottom: 1px solid #000">
-                                                                            <option selected>2019</option>
-
-                                                                            <option value="2018">2018</option>
-                                                                            <option value="2017">2017</option>
-                                                                            <option value="2016">2016</option>
-                                                                            <option value="2015">2015</option>
-                                                                        </select>
-                                                                    </label>
-                                                                </div>
+                                                                <select class="selectpicker" data-width="100%"
+                                                                id="" tabindex="-98" placeholder=2019>
+                                                                <option value="2019">2019</option>
+                                                                <option value="2018">2018</option>
+                                                                <option value="2017">2017</option>
+                                                            </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5 col-xs-4">
-                                                            <div class="selectdiv">
-                                                                <label>
-                                                                    <select style="border-bottom: 1px solid #000">
-
-                                                                        <option value="January">January</option>
-                                                                        <option value="February">February</option>
-                                                                        <option value="March">March</option>
-                                                                        <option value="April">April</option>
-                                                                        <option value="May">May</option>
-                                                                        <option value="June">June</option>
-                                                                        <option value="July">July</option>
-                                                                        <option value="Augest">Augest</option>
-                                                                        <option value="September">September</option>
-                                                                        <option value="October">October</option>
-                                                                        <option value="November">November</option>
-                                                                        <option value="December">December</option>
-                                                                    </select>
-                                                                </label>
-                                                            </div>
+                                                            <select class="selectpicker" data-width="100%"
+                                                            id="" tabindex="-98" placeholder="December">
+                                                            <option value="January">January</option>
+                                                            <option value="February">February</option>
+                                                            <option value="March">March</option>
+                                                            <option value="April">April</option>
+                                                            <option value="May">May</option>
+                                                            <option value="June">June</option>
+                                                            <option value="July">July</option>
+                                                            <option value="August">August</option>
+                                                            <option value="September">September</option>
+                                                            <option value="October">October</option>
+                                                            <option value="November">November</option>
+                                                            <option value="December">December</option>
+                                                        </select>
                                                         </div>
                                                         <div class="col-sm-3 col-xs-4">
-                                                            <div class="selectdiv">
-                                                                <label>
-                                                                    <select style="border-bottom: 1px solid #000">
-
-                                                                        <option value="1">1</option>
-                                                                        <option value="2">2</option>
-                                                                        <option value="3">3</option>
-                                                                        <option value="4">4</option>
-                                                                        <option value="5">5</option>
-                                                                    </select>
-                                                                </label>
-                                                            </div>
+                                                            <select class="selectpicker" data-width="100%"
+                                                            id="" tabindex="-98" placeholder="1">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
                                                         </div>
                                                     </div>
 

@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Online Kyc Popup</title>
+    <link rel="icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Kyc Popup For Kyc not verified CSS */
+        .parag {
+            font-size: 12px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            color: rgba(57, 57, 57);
+            font-weight: 600;
+            line-height: 2;
+        }
+
+        .popup-redirect {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(57, 57, 57);
+        }
+
+        .heading {
+            font-weight: 600;
+            font-size: 18px;
+            color: rgba(78, 78, 78);
+            margin-bottom: 10px;
+        }
+
+        /* Kyc Under Process Popup css */
+
+        .great-design {
+            color: rgba(78, 78, 78);
+            font-weight: 600;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+
+        .popup-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(57, 57, 57, 0.93);
+            letter-spacing: 1;
+            line-height: 1.6;
+        }
+
+        .otm-success-modal {
+            background-color: #53d581;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 30px auto;
+        }
+
+        .otm-icon-tick {
+            color: #fff;
+            font-size: 30px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- copy the modal popup code and placed on the page where you want -->
+
+    <!-- Kyc Popup For Kyc not verified-->
+    <div class="modal fade" id="exampleModalCent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 text-center" style="margin: 67px 0px;">
+                            <h4 class="heading">Oops!!!</h4>
+                            <p class="parag">Looks like you are not KYC <br> verified, redirecting you to<br> online KYC
+                                filling page</p>
+
+                            <img src="images/Spinner_1.gif" alt="loader" class=""> <span class="popup-redirect">
+                                Redirecting...</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <img src="images/Kyc_Popup_Img.png" alt="Kyc Popup" class="img-responsive"
+                                style="margin: 25px 10px 15px -10px;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Kyc Under Process Popup -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="otmDone"
+        aria-hidden="true">
+        <div class="modal-dialog" style="top:100px">
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 20px">
+                    <div class="row text-center">
+                        <div class="text-center otm-success-modal">
+                            <div style="padding-top: 30px;">
+                                <i class="icon-tick otm-icon-tick"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h4 class="text-center great-design">Great!!!</h4>
+                    <p class="text-center popup-text">Your KYC verification is still in the process, <br>please wait
+                        until it gets approved to <br> start a new investment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

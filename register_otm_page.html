@@ -606,8 +606,8 @@
                             </ul>
                         </li>
                         <li>
-                            <a  class="btn btn-investor"
-                                style="background-color:#ed1965;"  data-toggle="modal" data-target="#exampleModalCenter">New
+                            <a class="btn btn-investor" style="background-color:#ed1965;" data-toggle="modal"
+                                data-target="#exampleModalCenter">New
                                 Investor</a>
                         </li>
                     </ul>
@@ -750,12 +750,15 @@
                                                     id="txtPan" value="" placeholder="Bank Name">
                                             </div>
                                             <div class="clearfix hidden-xs"></div>
-                                            <div class="form-group form-group-md ">
-                                                    <label class="animated">Enter Account Type</label>
-                                                    <input type="text"
-                                                        class="form-control text-light stepperField inputTextDataName"
-                                                        id="txtMobileNum" value="" placeholder="Account Type">
-                                                </div>
+                                            <div class="form-group form-group-md">
+                                                <label class="animated">Enter Account Type</label>
+                                                <select class="selectpicker" data-width="100%"
+                                                    id="" tabindex="-98" placeholder="Saving">
+                                                    <option value="Saving">Saving</option>
+                                                    <option value="Current">Current</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                            </div>
                                             <div class="clearfix hidden-xs"></div>
                                             <div class="form-group form-group-md ">
                                                 <label class="">Enter Account Number</label>
@@ -777,10 +780,11 @@
 
                                     </div>
                                     <div class="stepperFrame3" style="display: none;">
-                                        <div class="final-h" >
+                                        <div class="final-h">
                                             <div class="form-group form-group-md">
                                                 <label class="">Enter Amount</label>
-                                                <input type="text" class="form-control text-light stepperField inputTextDataName"
+                                                <input type="text"
+                                                    class="form-control text-light stepperField inputTextDataName"
                                                     id="txtName" value="" placeholder="Enter Amount">
                                             </div>
                                             <div class="clearfix hidden-xs"></div>
@@ -799,54 +803,38 @@
                                                 <div class="row">
                                                     <div class="col-sm-4  col-xs-4">
                                                         <div class="form-group" style="margin: 0">
-                                                            <div class="selectdiv">
-                                                                <label>
-                                                                    <select style="border-bottom: 1px solid #000">
-                                                                        <option selected>2019</option>
-                                                                       
-                                                                        <option value="2018">2018</option>
-                                                                        <option value="2017">2017</option>
-                                                                        <option value="2016">2016</option>
-                                                                        <option value="2015">2015</option>
-                                                                    </select>
-                                                                </label>
-                                                            </div>
+                                                            <select class="selectpicker" data-width="100%"
+                                                            id="" tabindex="-98" placeholder=2019>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2017">2017</option>
+                                                        </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-5 col-xs-4">
-                                                        <div class="selectdiv">
-                                                            <label>
-                                                                <select style="border-bottom: 1px solid #000">
-                                                                   
-                                                                    <option value="January">January</option>
-                                                                    <option value="February">February</option>
-                                                                    <option value="March">March</option>
-                                                                    <option value="April">April</option>
-                                                                    <option value="May">May</option>
-                                                                    <option value="June">June</option>
-                                                                    <option value="July">July</option>
-                                                                    <option value="Augest">Augest</option>
-                                                                    <option value="September">September</option>
-                                                                    <option value="October">October</option>
-                                                                    <option value="November">November</option>
-                                                                    <option value="December">December</option>
-                                                                </select>
-                                                            </label>
-                                                        </div>
+                                                        <select class="selectpicker" data-width="100%"
+                                                        id="" tabindex="-98" placeholder="December">
+                                                        <option value="January">January</option>
+                                                        <option value="February">February</option>
+                                                        <option value="March">March</option>
+                                                        <option value="April">April</option>
+                                                        <option value="May">May</option>
+                                                        <option value="June">June</option>
+                                                        <option value="July">July</option>
+                                                        <option value="August">August</option>
+                                                        <option value="September">September</option>
+                                                        <option value="October">October</option>
+                                                        <option value="November">November</option>
+                                                        <option value="December">December</option>
+                                                    </select>
                                                     </div>
                                                     <div class="col-sm-3 col-xs-4">
-                                                        <div class="selectdiv">
-                                                            <label>
-                                                                <select style="border-bottom: 1px solid #000">
-                                                                  
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="5">5</option>
-                                                                </select>
-                                                            </label>
-                                                        </div>
+                                                        <select class="selectpicker" data-width="100%"
+                                                        id="" tabindex="-98" placeholder="1">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
                                                     </div>
                                                 </div>
 
@@ -859,59 +847,44 @@
                                                     Until Cancelled.
                                                 </label>
                                             </div>
-                                            <div class="form-group form-group-md date-form-login" style="margin: 0; display: none;">
+                                            <div class="form-group form-group-md date-form-login"
+                                                style="margin: 0; display: none;">
                                                 <label class="">To Date</label>
                                                 <div class="row">
                                                     <div class="col-sm-4  col-xs-4">
                                                         <div class="form-group" style="margin: 0">
-                                                            <div class="selectdiv">
-                                                                <label>
-                                                                    <select style="border-bottom: 1px solid #000">
-                                                                        <option selected>2019</option>
-                                                                       
-                                                                        <option value="2018">2018</option>
-                                                                        <option value="2017">2017</option>
-                                                                        <option value="2016">2016</option>
-                                                                        <option value="2015">2015</option>
-                                                                    </select>
-                                                                </label>
-                                                            </div>
+                                                            <select class="selectpicker" data-width="100%"
+                                                            id="" tabindex="-98" placeholder=2019>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2017">2017</option>
+                                                        </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-5 col-xs-4">
-                                                        <div class="selectdiv">
-                                                            <label>
-                                                                <select style="border-bottom: 1px solid #000">
-                                                                   
-                                                                    <option value="January">January</option>
-                                                                    <option value="February">February</option>
-                                                                    <option value="March">March</option>
-                                                                    <option value="April">April</option>
-                                                                    <option value="May">May</option>
-                                                                    <option value="June">June</option>
-                                                                    <option value="July">July</option>
-                                                                    <option value="Augest">Augest</option>
-                                                                    <option value="September">September</option>
-                                                                    <option value="October">October</option>
-                                                                    <option value="November">November</option>
-                                                                    <option value="December">December</option>
-                                                                </select>
-                                                            </label>
-                                                        </div>
+                                                        <select class="selectpicker" data-width="100%"
+                                                        id="" tabindex="-98" placeholder="December">
+                                                        <option value="January">January</option>
+                                                        <option value="February">February</option>
+                                                        <option value="March">March</option>
+                                                        <option value="April">April</option>
+                                                        <option value="May">May</option>
+                                                        <option value="June">June</option>
+                                                        <option value="July">July</option>
+                                                        <option value="August">August</option>
+                                                        <option value="September">September</option>
+                                                        <option value="October">October</option>
+                                                        <option value="November">November</option>
+                                                        <option value="December">December</option>
+                                                    </select>
                                                     </div>
                                                     <div class="col-sm-3 col-xs-4">
-                                                        <div class="selectdiv">
-                                                            <label>
-                                                                <select style="border-bottom: 1px solid #000">
-                                                                  
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="5">5</option>
-                                                                </select>
-                                                            </label>
-                                                        </div>
+                                                        <select class="selectpicker" data-width="100%"
+                                                        id="" tabindex="-98" placeholder="1">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
                                                     </div>
                                                 </div>
 
@@ -1052,7 +1025,8 @@
                                             class="btn btn-sm btn-style btn-outborder btn-filled btn-focus pull-left text-semibold btn-signin">
                                     </a>
                                     <a data-toggle="modal" data-target="#otmDone">
-                                        <input type="button" id="btnsignin" value="Submit" data-dismiss="modal" aria-hidden="true"
+                                        <input type="button" id="btnsignin" value="Submit" data-dismiss="modal"
+                                            aria-hidden="true"
                                             class="btn btn-sm btn-style btn-filled pull-right text-semibold btn-signin">
                                     </a>
                                 </div>
@@ -1073,14 +1047,13 @@
                                         <div style="padding-top: 27px;">
                                             <i class="icon-tick otm-icon-tick"></i>
                                         </div>
-
                                     </div>
                                 </div>
-
                                 <h4 class="text-center" style="margin-bottom: 20px;">OTM has been <br> submitted
                                     successfully!</h4>
                                 <div class=" form-btns text-center" style="margin-bottom: 10px;">
-                                    <input type="button" id="btnsignin" value="Done" data-dismiss="modal" aria-hidden="true"
+                                    <input type="button" id="btnsignin" value="Done" data-dismiss="modal"
+                                        aria-hidden="true"
                                         class="btn btn-lg btn-style btn-filled text-lighter btn-signin">
                                 </div>
                             </div>
@@ -1088,12 +1061,10 @@
                     </div>
                 </div>
             </div>
-
-       
         </div>
-      
+
     </div>
-    
+
 
 
 
@@ -1263,8 +1234,8 @@
 
         </div>
     </footer>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog " role="document">
           <div class="modal-content">
      
             <div class="modal-body">
@@ -1283,8 +1254,8 @@
            
           </div>
         </div>
-      </div>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="otmDone"
+      </div> -->
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="otmDone"
       aria-hidden="true">
       <div class="modal-dialog" style="top:100px">
           <div class="modal-content">
@@ -1303,7 +1274,7 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
 
 
 
