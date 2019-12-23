@@ -1,66 +1,70 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="icon" href="../../favicon.ico" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
     <title>Axis MF</title>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/emandate.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/vendor.min.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
 </head>
 
 <body>
-    <div class="post-log-wrapper">
-        <!-- sidebar holder -->
+    <div class="post-log-wrapper post-log-wrapper-theme">
+
+        <!-- Sidebar Holder -->
         <nav class="sidebar">
             <div class="sidebar-wrapper">
-                <button type="button" class="btn-sidebar-close icon-cancel visible-xs-block visible-sm-block"></button>
+                <button type="button" class="btn-sitebar-close icon-cancel visible-xs-block"></button>
                 <div class="sidebar-header">
                     <button type="button" id="sidebarCollapse" class="btn-sidebar icon-hamburgermenu"></button>
-                    <a class="sidebar-brand" href="#">
+                    <a class="sidebar-brand" href="javascript:void(0)">
                         <img src="images/logo-white.png" />
                     </a>
                 </div>
                 <ul class="list-unstyled nav-main">
                     <li>
                         <a href="dashboard.html">
-                            <i class="icon-dashboard" data-toggle="tooltip" data-placement="right"
-                                title="Dashboard"></i>
+                            <i class="icon-dashboard"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a href="portfolio.html">
-                            <i class="icon-portfolio" data-toggle="tooltip" data-placement="right"
-                                title="Portfolio"></i>
+                            <i class="icon-portfolio"></i>
                             <span>Portfolio</span>
                         </a>
                     </li>
                     <li>
                         <a href="#transactSubmenu" class="nav-subnav">
-                            <i class="icon-transact" data-toggle="tooltip" data-placement="right" title="Transact"></i>
+                            <i class="icon-transact"></i>
                             <span>Transact</span>
                         </a>
                     </li>
                     <li>
                         <a href="systematic_plans.html">
-                            <i class="icon-systematic_plans" data-toggle="tooltip" data-placement="right"
-                                title="Systematic Plans"></i>
+                            <i class="icon-systematic_plans"></i>
                             <span>Systematic Plans</span>
                         </a>
                     </li>
                     <li>
                         <a href="my_transactions.html">
-                            <i class="icon-my_transactions" data-toggle="tooltip" data-placement="right"
-                                title="My Transactions"></i>
+                            <i class="icon-my_transactions"></i>
                             <span>My Transactions</span>
                         </a>
                     </li>
@@ -103,7 +107,7 @@
                 </ul>
                 <ul class="list-unstyled nav-bottom">
                     <li>
-                        <a href="home.html">
+                        <a href="javascript:void(0)">
                             <i class="glyphicon glyphicon-home"></i>
                             <span>Home</span>
                         </a>
@@ -112,9 +116,9 @@
             </div>
             <div class="expanded-menus">
                 <div class="subnav">
-                    <!-- <div class="btn-sidebar-back">
+                    <div class="btn-sitebar-back">
                         <button type="button" class="btn icon-arrow_next"></button>
-                    </div> -->
+                    </div>
                     <div class="subnav-list-item" id="transactSubmenu">
                         <h2>Transact</h2>
                         <ul class="list-unstyled">
@@ -149,7 +153,6 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                     <div class="subnav-list-item" id="investorSubmenu">
                         <h2>Investor Services</h2>
@@ -194,16 +197,17 @@
                 </div>
             </div>
         </nav>
-        <!-- Main Holder -->
+
+        <!-- Page Content Holder -->
         <div class="main-content">
             <nav class="navbar navbar-theme">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed btn-navbar icon-hamburgermenu" id=""></button>
-                    <a href="#" class="navbar-brand visible-xs-block">
-                        <img src="images/logo.png">
+                    <a class="navbar-brand visible-xs-block" href="#">
+                        <img src="images/logo.png" />
                     </a>
                 </div>
-                <div class="navbar-collapse" id=" ">
+                <div class="navbar-collapse" id="">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown user-dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle user-info hidden-xs"
@@ -214,6 +218,8 @@
                             <span class="user-log-details hidden-xs">Last Login:
                                 <strong>3rd Oct 2017 03::30 PM</strong>
                             </span>
+
+
                             <a href="javascript:void(0)" class="dropdown-toggle visible-xs-inline-block"
                                 data-toggle="dropdown">
                                 <i class="icon-profile"></i>
@@ -225,9 +231,6 @@
                                     <span class="user-log-details text-center-xs">Last Login:
                                         <strong>3rd Oct 2017 03::30 PM</strong>
                                     </span>
-                                    <!-- <span>
-                                        <i class="icon-cart" style="color: ;"></i>
-                                    </span> -->
                                 </li>
                                 <li>
                                     <a href="my_profile.html">
@@ -255,26 +258,17 @@
                                 </li>
                             </ul>
                         </li>
-
-                        <!-- <li class="add-cart hidden">
+                        <li class="">
                             <a href="javascript:void(0)">
                                 <i class="icon-cart">
                                     <span class="badge online"></span>
                                 </i>
                             </a>
-                        </li> -->
-                        <li>
-                            <a href="">
-                                <i class="icon-cart">
-                                    <span class="bagde online"></span>
-                                </i>
-                            </a>
                         </li>
                     </ul>
-
-
                 </div>
             </nav>
+            <!--/.navbar-theme-->
 
             <div class="container">
                 <div class="hidden-xs">
@@ -284,13 +278,14 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row contain-width">
                     <div class="col-xs-6 col-sm-6 col-md-6 otm-title otm-title-sm">
                         <h1>OTM</h1>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 new-add new-add-sm">
 
-                        <a onclick="modalOpen()" data-toggle="modal" data-target="#registerOtmModal">
+                        <a data-toggle="modal" data-target="#registerOtmModal">
                             <img src="images/addOtmIcon.png" style="width: 25px;">
 
                             <span> Register New OTM</span>
@@ -300,9 +295,9 @@
                 </div>
                 <div style="border-bottom: 1px solid rgba(237, 25, 101, 0.2);" class="fit-main-content"></div>
 
-
-
-                <div class="row m-tb contain-width">
+            </div>
+            <div class="container">
+                <div class="row m-tb">
                     <form>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="form-group">
@@ -335,7 +330,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="table-theme table-border-base-theme table-plan">
+                        <div class="table-theme table-border-base-theme table-plan overflow-xs">
                             <table class="table ">
                                 <thead>
                                     <tr>
@@ -386,6 +381,30 @@
             </div>
 
 
+            <div class="modal fade payments-sip-modal" id="OtmSuccess" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="container">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content" style="border-radius:10px">
+                            <div class="modal-body" style="padding: 20px">
+                                <img src="images/portfolio_piggy_bank.png" class="text-center img">
+                                <h3 class="color-base text-center heading">Thank You For Your Transaction
+                                </h3>
+                                <h5 class="text-center .h5">Reference #41530588</h5>
+                                <p class="parag">You have not registered for OTM yet
+                                    would you
+                                    like to <a href="#" target="_blank"><span class="color-base">Register
+                                            now?</span></a></p>
+                                <div class=" form-btns text-center" style="margin-bottom: 10px;">
+                                    <input type="button" id="btnsignin" value="Done" data-dismiss="modal"
+                                        aria-label="Close"
+                                        class="btn btn-lg btn-style btn-filled text-lighter btn-signin">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="modal fade" id="registerOtmModal" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
                 style="z-index:1061; top:10%; position: absolute;">
@@ -393,9 +412,9 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content" style="border-radius:10px">
                             <!-- <div class="modal-header">
-                           
-                        </div> -->
-                            <div class="modal-body modal-padd">
+                               
+                            </div> -->
+                            <div class="modal-body modal-padd" style="">
                                 <button type="button" class="modal-icon-close close" data-dismiss="modal"
                                     aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -759,7 +778,7 @@
                                 <a data-toggle="modal" data-target="#registerOtmModal">
                                     <input type="button" id="btnsignin" value="Edit" data-dismiss="modal"
                                         aria-label="Close"
-                                        class="btn btn-sm btn-style btn-outborder btn-focus pull-left text-semibold btn-signin">
+                                        class="btn btn-sm btn-style btn-outborder btn-filled btn-focus pull-left text-semibold btn-signin">
                                 </a>
                                 <a data-toggle="modal" data-target="#otmDone">
                                     <input type="button" id="btnsignin" value="Submit" data-dismiss="modal"
@@ -772,7 +791,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="modal fade" id="otmDone" tabindex="-1" role="dialog" aria-labelledby="basicModal"
                 aria-hidden="true">
@@ -798,26 +816,21 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
+        <!--/.container-->
+
     </div>
-
-
-    <!-- Modal -->
-
-
-
-
-
-
-
+    <div class="overlay-light"></div>
 
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/vendor.min.js"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="js/common.js"></script>
+    <script>
 
-
-
+    </script>
 </body>
 
 </html>

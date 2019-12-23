@@ -430,7 +430,6 @@ ul li p {
         margin-right: 0px !important;
         margin-bottom: 50px;
     }
-
     /* Otm_page responsive */
     .radio-selection {
         padding-right: 8px;
@@ -440,7 +439,6 @@ ul li p {
         top: 40px;
         padding: 12px;
     }
-
     .new-add-sm {
         top: 36px;
         padding: 12px;
@@ -450,7 +448,6 @@ ul li p {
         margin-top: 60px;
         padding: 0px 30px 0px 20px !important;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -519,6 +516,33 @@ ul li p {
         margin-top: 2rem !important;
         margin-bottom: 2rem !important;
     }
+    .otm-title{
+        top:16px;
+    }
+    .new-add {
+        top: 20px;
+    }
+    .new-add a {
+        font-size: 13px;
+    }
+    .otm-title h1 {
+        font-size: 24px;
+    }
+    .radio-selection {
+        font-size: 14px !important;
+    }
+    .table-head {
+        padding: 9px 15px !important;
+        font-size: 13px !important;
+    }
+    .table-td {
+        padding: 0px !important;
+        font-size: 14px !important;
+    }
+    .table-data {
+        font-size: 14px !important;
+        color: #464646e8 !important;
+    }
     /* payment-sip-method-copy */
     .item-pad {
         padding: 13px 0px;
@@ -531,6 +555,11 @@ ul li p {
         margin-top: 40px;
         padding: 0px 30px 0px 20px !important;
     }
+    .tab-padd {
+        font-size: 15px !important;
+        padding: 12px 0px !important;
+    }
+  
 }
 
 @media only screen and (max-width: 380px) {
@@ -554,6 +583,13 @@ ul li p {
         font-size: 15px !important;
         padding: 12px 0px !important;
     }
+    .overflow-xs{
+        overflow-x: scroll;
+    }
+    .new-add a {
+        font-size: 11px;
+    }
+ 
 }
 
 @media only screen and (max-width: 320px) {
@@ -577,4 +613,7 @@ ul li p {
         padding: 12px 0px !important;
     }
 
+    /* otm-page  */
+
+ 
 }
